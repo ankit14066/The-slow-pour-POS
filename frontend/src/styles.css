@@ -1,0 +1,67 @@
+:root {
+  font-family: Segoe UI, Arial, sans-serif;
+}
+body {
+  margin: 0;
+  background: #f4f6f8;
+  color: #15202b;
+}
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1, h2, h3 {
+  margin-top: 0;
+}
+.grid {
+  display: grid;
+  gap: 16px;
+}
+.stats {
+  grid-template-columns: repeat(3, 1fr);
+}
+.two {
+  grid-template-columns: 2fr 1fr;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+input, button {
+  padding: 8px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  padding: 8px;
+}
+.sale {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.msg {
+  color: #0f5132;
+}
+@media (max-width: 900px) {
+  .stats, .two {
+    grid-template-columns: 1fr;
+  }
+  .form {
+    grid-template-columns: 1fr;
+  }
+}

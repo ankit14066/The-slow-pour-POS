@@ -1,0 +1,388 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --brown-900:#1a0f08;--brown-800:#2d1a0e;--brown-700:#3d2414;
+    --brown-600:#5c3520;--brown-500:#7a4a2d;--brown-400:#9b6040;
+    --gold-500:#c9a227;--gold-400:#e0b84a;--gold-300:#f0cf7a;
+    --cream:#f5ede0;--cream-dark:#e8d5b8;
+    --text-light:#f5ede0;--text-muted:#b89878;
+  }
+  .pos-root{
+    font-family:'DM Sans',sans-serif;
+    background:var(--brown-900);
+    color:var(--text-light);
+    min-height:600px;
+    border-radius:12px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+  }
+  .topbar{
+    background:var(--brown-800);
+    border-bottom:1px solid var(--brown-600);
+    padding:12px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .brand-name{
+    font-family:'Playfair Display',serif;
+    font-size:18px;
+    font-weight:700;
+    color:var(--gold-400);
+    letter-spacing:1px;
+  }
+  .brand-sub{font-size:10px;color:var(--text-muted);letter-spacing:2px;text-transform:uppercase}
+  .topbar-right{display:flex;gap:16px;align-items:center}
+  .token-badge{
+    background:var(--gold-500);color:var(--brown-900);
+    padding:4px 14px;border-radius:20px;
+    font-size:12px;font-weight:500;
+  }
+  .staff-info{font-size:12px;color:var(--text-muted)}
+  .main-area{display:flex;flex:1;gap:0}
+  .menu-panel{
+    flex:1.2;
+    background:var(--brown-800);
+    padding:16px;
+    border-right:1px solid var(--brown-600);
+  }
+  .order-panel{
+    width:280px;
+    background:var(--brown-900);
+    padding:16px;
+    display:flex;flex-direction:column;gap:12px;
+  }
+  .section-label{
+    font-size:10px;letter-spacing:2px;text-transform:uppercase;
+    color:var(--text-muted);margin-bottom:10px;
+  }
+  .tabs{display:flex;gap:6px;margin-bottom:14px}
+  .tab{
+    padding:6px 14px;border-radius:20px;font-size:12px;
+    border:1px solid var(--brown-600);color:var(--text-muted);
+    cursor:pointer;transition:all 0.2s;
+  }
+  .tab.active{background:var(--gold-500);color:var(--brown-900);border-color:var(--gold-500);font-weight:500}
+  .menu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+  .menu-card{
+    background:var(--brown-700);
+    border:1px solid var(--brown-600);
+    border-radius:10px;padding:12px;
+    cursor:pointer;transition:all 0.18s;
+    position:relative;overflow:hidden;
+  }
+  .menu-card:hover{border-color:var(--gold-500);background:var(--brown-600);transform:translateY(-1px)}
+  .menu-card.unavailable{opacity:0.4;pointer-events:none}
+  .item-emoji{font-size:26px;margin-bottom:6px;display:block}
+  .item-name{font-size:13px;font-weight:500;color:var(--text-light);margin-bottom:2px}
+  .item-price{font-size:12px;color:var(--gold-400);font-weight:500}
+  .item-tag{
+    font-size:9px;letter-spacing:1px;text-transform:uppercase;
+    color:var(--text-muted);margin-bottom:4px;
+  }
+  .avail-toggle{
+    position:absolute;top:8px;right:8px;
+    width:28px;height:16px;border-radius:8px;
+    background:var(--gold-500);cursor:pointer;
+    transition:background 0.2s;
+  }
+  .avail-toggle.off{background:var(--brown-500)}
+  .avail-toggle::after{
+    content:'';position:absolute;top:2px;left:2px;
+    width:12px;height:12px;border-radius:50%;background:white;
+    transition:transform 0.2s;
+  }
+  .avail-toggle.off::after{transform:translateX(0px)}
+  .avail-toggle:not(.off)::after{transform:translateX(12px)}
+  .order-header{
+    font-family:'Playfair Display',serif;
+    font-size:15px;color:var(--gold-400);
+    border-bottom:1px solid var(--brown-600);
+    padding-bottom:10px;
+  }
+  .order-type-btns{display:flex;gap:6px}
+  .otype-btn{
+    flex:1;padding:7px;border-radius:8px;font-size:11px;
+    border:1px solid var(--brown-600);color:var(--text-muted);
+    cursor:pointer;text-align:center;transition:all 0.2s;
+  }
+  .otype-btn.active{background:var(--brown-600);border-color:var(--gold-500);color:var(--gold-400)}
+  .order-items{flex:1;min-height:0;overflow-y:auto}
+  .order-item{
+    display:flex;align-items:center;gap:8px;
+    padding:8px 0;border-bottom:1px solid var(--brown-700);
+  }
+  .order-item-name{flex:1;font-size:12px;color:var(--text-light)}
+  .order-item-size{font-size:10px;color:var(--text-muted)}
+  .qty-ctrl{display:flex;align-items:center;gap:6px}
+  .qty-btn{
+    width:20px;height:20px;border-radius:4px;
+    background:var(--brown-600);color:var(--text-light);
+    border:none;cursor:pointer;font-size:13px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .qty-num{font-size:12px;min-width:14px;text-align:center}
+  .order-item-price{font-size:12px;color:var(--gold-400);min-width:40px;text-align:right}
+  .remove-btn{background:none;border:none;color:var(--brown-500);cursor:pointer;font-size:14px;padding:0}
+  .order-summary{border-top:1px solid var(--brown-600);padding-top:10px}
+  .summary-row{display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);padding:3px 0}
+  .summary-total{
+    display:flex;justify-content:space-between;
+    font-size:15px;font-weight:500;
+    color:var(--text-light);margin-top:6px;padding-top:6px;
+    border-top:1px solid var(--brown-600);
+  }
+  .pay-btns{display:flex;flex-direction:column;gap:6px}
+  .pay-btn{
+    padding:10px;border-radius:8px;font-size:12px;
+    border:1px solid var(--brown-600);cursor:pointer;
+    color:var(--text-muted);background:var(--brown-800);
+    transition:all 0.2s;
+  }
+  .pay-btn:hover{border-color:var(--gold-500);color:var(--gold-400)}
+  .pay-btn.primary{
+    background:var(--gold-500);color:var(--brown-900);
+    border-color:var(--gold-500);font-weight:500;font-size:13px;
+  }
+  .pay-btn.primary:hover{background:var(--gold-300)}
+  .empty-order{
+    text-align:center;color:var(--text-muted);font-size:12px;
+    padding:30px 0;
+  }
+  .live-orders-bar{
+    background:var(--brown-800);
+    border-top:1px solid var(--brown-600);
+    padding:10px 20px;
+    display:flex;gap:10px;align-items:center;
+    overflow-x:auto;
+  }
+  .live-order-chip{
+    display:flex;align-items:center;gap:8px;
+    background:var(--brown-700);border:1px solid var(--brown-600);
+    border-radius:8px;padding:6px 12px;white-space:nowrap;
+    font-size:11px;
+  }
+  .status-dot{width:7px;height:7px;border-radius:50%}
+  .status-dot.preparing{background:#e0b84a}
+  .status-dot.ready{background:#4caf82}
+  .status-dot.pending{background:#9b9b9b}
+  .chip-token{font-weight:500;color:var(--gold-400)}
+  .chip-status{color:var(--text-muted)}
+  .discount-row{display:flex;gap:6px;margin-bottom:4px}
+  .discount-input{
+    flex:1;padding:6px 10px;border-radius:6px;font-size:11px;
+    background:var(--brown-800);border:1px solid var(--brown-600);
+    color:var(--text-light);outline:none;
+  }
+  .apply-btn{
+    padding:6px 10px;border-radius:6px;font-size:11px;
+    background:var(--brown-700);border:1px solid var(--brown-600);
+    color:var(--gold-400);cursor:pointer;
+  }
+</style>
+
+<h2 class="sr-only">The Slow Pour POS System — order management interface</h2>
+
+<div class="pos-root" id="pos">
+  <div class="topbar">
+    <div>
+      <div class="brand-name">THE SLOW POUR</div>
+      <div class="brand-sub">Craft · POS System</div>
+    </div>
+    <div class="topbar-right">
+      <div class="staff-info"><i class="ti ti-user" aria-hidden="true"></i> Rahul &nbsp;|&nbsp; Counter</div>
+      <div class="token-badge" id="tokenBadge">Token #12</div>
+    </div>
+  </div>
+
+  <div class="main-area">
+    <div class="menu-panel">
+      <div class="section-label">Menu</div>
+      <div class="tabs">
+        <div class="tab active" onclick="filterMenu('all',this)">All</div>
+        <div class="tab" onclick="filterMenu('coffee',this)">Cold Coffee</div>
+        <div class="tab" onclick="filterMenu('coco',this)">Cold Coco</div>
+        <div class="tab" onclick="filterMenu('addon',this)">Add-ons</div>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </div>
+
+    <div class="order-panel">
+      <div class="order-header"><i class="ti ti-receipt" aria-hidden="true"></i> Current Order</div>
+      <div class="order-type-btns">
+        <div class="otype-btn active" onclick="setType('Dine-in',this)"><i class="ti ti-armchair" aria-hidden="true"></i> Dine-in</div>
+        <div class="otype-btn" onclick="setType('Takeaway',this)"><i class="ti ti-shopping-bag" aria-hidden="true"></i> Takeaway</div>
+        <div class="otype-btn" onclick="setType('Delivery',this)"><i class="ti ti-bike" aria-hidden="true"></i> Delivery</div>
+      </div>
+
+      <div class="order-items" id="orderItems">
+        <div class="empty-order" id="emptyMsg"><i class="ti ti-coffee" aria-hidden="true"></i><br>Add items to start order</div>
+      </div>
+
+      <div class="discount-row">
+        <input class="discount-input" id="couponInput" placeholder="Coupon code..." />
+        <button class="apply-btn" onclick="applyCoupon()">Apply</button>
+      </div>
+
+      <div class="order-summary" id="orderSummary" style="display:none">
+        <div class="summary-row"><span>Subtotal</span><span id="subtotalVal">₹0</span></div>
+        <div class="summary-row" id="discountRow" style="display:none"><span>Discount</span><span id="discountVal" style="color:#4caf82">-₹0</span></div>
+        <div class="summary-row"><span>GST (5%)</span><span id="gstVal">₹0</span></div>
+        <div class="summary-total"><span>Total</span><span id="totalVal">₹0</span></div>
+      </div>
+
+      <div class="pay-btns">
+        <div style="display:flex;gap:6px">
+          <button class="pay-btn" style="flex:1" onclick="selectPayment('Cash')"><i class="ti ti-cash" aria-hidden="true"></i> Cash</button>
+          <button class="pay-btn" style="flex:1" onclick="selectPayment('UPI')"><i class="ti ti-qrcode" aria-hidden="true"></i> UPI</button>
+          <button class="pay-btn" style="flex:1" onclick="selectPayment('Card')"><i class="ti ti-credit-card" aria-hidden="true"></i> Card</button>
+        </div>
+        <button class="pay-btn primary" onclick="placeOrder()"><i class="ti ti-check" aria-hidden="true"></i> Place Order</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="live-orders-bar" id="liveOrders">
+    <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);white-space:nowrap">Live Orders</span>
+    <div class="live-order-chip"><div class="status-dot preparing"></div><span class="chip-token">#09</span><span class="chip-status">Preparing</span></div>
+    <div class="live-order-chip"><div class="status-dot ready"></div><span class="chip-token">#10</span><span class="chip-status">Ready</span></div>
+    <div class="live-order-chip"><div class="status-dot pending"></div><span class="chip-token">#11</span><span class="chip-status">Pending</span></div>
+  </div>
+</div>
+
+<script>
+const menuItems=[
+  {id:1,name:'Classic Cold Coffee',tag:'Cold Coffee',cat:'coffee',price:120,emoji:'☕'},
+  {id:2,name:'Mocha Frost',tag:'Cold Coffee',cat:'coffee',price:140,emoji:'🧋'},
+  {id:3,name:'Caramel Cloud',tag:'Cold Coffee',cat:'coffee',price:150,emoji:'🍮'},
+  {id:4,name:'Cold Brew Original',tag:'Cold Coffee',cat:'coffee',price:130,emoji:'🥃'},
+  {id:5,name:'Dark Coco Shake',tag:'Cold Coco',cat:'coco',price:130,emoji:'🍫'},
+  {id:6,name:'Belgian Coco',tag:'Cold Coco',cat:'coco',price:150,emoji:'🍫'},
+  {id:7,name:'Mint Choco',tag:'Cold Coco',cat:'coco',price:140,emoji:'🌿'},
+  {id:8,name:'Nutella Coco',tag:'Cold Coco',cat:'coco',price:160,emoji:'🍫'},
+  {id:9,name:'Extra Shot',tag:'Add-on',cat:'addon',price:30,emoji:'⚡'},
+  {id:10,name:'Oat Milk',tag:'Add-on',cat:'addon',price:40,emoji:'🥛'},
+];
+
+let cart={};
+let orderType='Dine-in';
+let payMode='';
+let discount=0;
+let tokenNum=12;
+let availability={};
+menuItems.forEach(i=>availability[i.id]=true);
+
+function filterMenu(cat,el){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+  renderMenu(cat);
+}
+
+function renderMenu(cat='all'){
+  const g=document.getElementById('menuGrid');
+  g.innerHTML='';
+  menuItems.filter(i=>cat==='all'||i.cat===cat).forEach(item=>{
+    const av=availability[item.id];
+    const d=document.createElement('div');
+    d.className='menu-card'+(av?'':' unavailable');
+    d.innerHTML=`<span class="item-emoji">${item.emoji}</span><div class="item-tag">${item.tag}</div><div class="item-name">${item.name}</div><div class="item-price">₹${item.price}</div><div class="avail-toggle${av?'':' off'}" onclick="toggleAvail(event,${item.id})" title="${av?'Available':'Unavailable'}"></div>`;
+    d.onclick=()=>addToCart(item);
+    g.appendChild(d);
+  });
+}
+
+function toggleAvail(e,id){
+  e.stopPropagation();
+  availability[id]=!availability[id];
+  renderMenu(document.querySelector('.tab.active').textContent.toLowerCase().includes('all')?'all':document.querySelector('.tab.active').textContent.toLowerCase().includes('coffee')?'coffee':document.querySelector('.tab.active').textContent.toLowerCase().includes('coco')?'coco':'addon');
+}
+
+function addToCart(item){
+  if(!availability[item.id])return;
+  if(cart[item.id]){cart[item.id].qty++;}
+  else{cart[item.id]={...item,qty:1};}
+  renderOrder();
+}
+
+function changeQty(id,delta){
+  if(cart[id]){
+    cart[id].qty+=delta;
+    if(cart[id].qty<=0)delete cart[id];
+  }
+  renderOrder();
+}
+
+function renderOrder(){
+  const container=document.getElementById('orderItems');
+  const empty=document.getElementById('emptyMsg');
+  const summary=document.getElementById('orderSummary');
+  const keys=Object.keys(cart);
+  if(keys.length===0){
+    container.innerHTML='<div class="empty-order" id="emptyMsg"><i class="ti ti-coffee" aria-hidden="true"></i><br>Add items to start order</div>';
+    summary.style.display='none';
+    return;
+  }
+  container.innerHTML='';
+  let subtotal=0;
+  keys.forEach(id=>{
+    const item=cart[id];
+    subtotal+=item.price*item.qty;
+    const row=document.createElement('div');
+    row.className='order-item';
+    row.innerHTML=`<div style="flex:1"><div class="order-item-name">${item.emoji} ${item.name}</div></div><div class="qty-ctrl"><button class="qty-btn" onclick="changeQty(${id},-1)">−</button><span class="qty-num">${item.qty}</span><button class="qty-btn" onclick="changeQty(${id},1)">+</button></div><div class="order-item-price">₹${item.price*item.qty}</div>`;
+    container.appendChild(row);
+  });
+  const gst=Math.round(subtotal*0.05);
+  const total=subtotal-discount+gst;
+  document.getElementById('subtotalVal').textContent='₹'+subtotal;
+  document.getElementById('gstVal').textContent='₹'+gst;
+  document.getElementById('totalVal').textContent='₹'+total;
+  if(discount>0){
+    document.getElementById('discountRow').style.display='flex';
+    document.getElementById('discountVal').textContent='-₹'+discount;
+  }
+  summary.style.display='block';
+}
+
+function setType(t,el){
+  orderType=t;
+  document.querySelectorAll('.otype-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+}
+
+function selectPayment(m){
+  payMode=m;
+  document.querySelectorAll('.pay-btn:not(.primary)').forEach(b=>{
+    b.style.borderColor=b.textContent.includes(m)?'var(--gold-500)':'var(--brown-600)';
+    b.style.color=b.textContent.includes(m)?'var(--gold-400)':'var(--text-muted)';
+  });
+}
+
+function applyCoupon(){
+  const code=document.getElementById('couponInput').value.trim().toUpperCase();
+  if(code==='SLOWPOUR10'){discount=10;alert('Coupon applied! ₹10 off');}
+  else if(code==='CRAFT20'){discount=20;alert('Coupon applied! ₹20 off');}
+  else{alert('Invalid coupon code');discount=0;}
+  renderOrder();
+}
+
+function placeOrder(){
+  const keys=Object.keys(cart);
+  if(keys.length===0){alert('Cart is empty!');return;}
+  tokenNum++;
+  const chip=document.createElement('div');
+  chip.className='live-order-chip';
+  chip.innerHTML=`<div class="status-dot pending"></div><span class="chip-token">#${tokenNum}</span><span class="chip-status">${orderType}</span>`;
+  document.getElementById('liveOrders').appendChild(chip);
+  document.getElementById('tokenBadge').textContent='Token #'+(tokenNum+1);
+  cart={};discount=0;payMode='';
+  document.getElementById('couponInput').value='';
+  renderOrder();
+  alert('Order placed! Token #'+tokenNum+' ('+orderType+')');
+}
+
+renderMenu();
+</script>

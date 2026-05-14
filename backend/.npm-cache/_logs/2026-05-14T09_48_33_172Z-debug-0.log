@@ -1,0 +1,1142 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.8.2
+2 info using node@v20.19.2
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:D:\POS\backend\.npmrc
+5 silly config load:file:C:\Users\HP\.npmrc
+6 silly config load:file:C:\Users\HP\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:D:\POS\backend\.npm-cache\_logs\2026-05-14T09_48_33_172Z-
+10 verbose logfile D:\POS\backend\.npm-cache\_logs\2026-05-14T09_48_33_172Z-debug-0.log
+11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly fetch manifest json2csv@^6.0.0-alpha.2
+15 silly packumentCache full:https://registry.npmjs.org/json2csv cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+17 http fetch GET 200 https://registry.npmjs.org/npm 1545ms
+18 http fetch GET 200 https://registry.npmjs.org/json2csv 2582ms (cache miss)
+19 silly packumentCache full:https://registry.npmjs.org/json2csv set size:undefined disposed:false
+20 silly fetch manifest multer@^1.4.5-lts.1
+21 silly packumentCache full:https://registry.npmjs.org/multer cache-miss
+22 http fetch GET 200 https://registry.npmjs.org/multer 99ms (cache miss)
+23 silly packumentCache full:https://registry.npmjs.org/multer set size:undefined disposed:false
+24 silly fetch manifest pdfkit@^0.15.0
+25 silly packumentCache full:https://registry.npmjs.org/pdfkit cache-miss
+26 http fetch GET 200 https://registry.npmjs.org/pdfkit 88ms (cache miss)
+27 silly packumentCache full:https://registry.npmjs.org/pdfkit set size:undefined disposed:false
+28 silly placeDep ROOT json2csv@6.0.0-alpha.2 OK for: slowpour-backend@1.0.0 want: ^6.0.0-alpha.2
+29 silly placeDep ROOT multer@1.4.5-lts.2 OK for: slowpour-backend@1.0.0 want: ^1.4.5-lts.1
+30 silly placeDep ROOT pdfkit@0.15.2 OK for: slowpour-backend@1.0.0 want: ^0.15.0
+31 silly fetch manifest @streamparser/json@^0.0.6
+32 silly packumentCache full:https://registry.npmjs.org/@streamparser%2fjson cache-miss
+33 silly fetch manifest commander@^6.2.0
+34 silly packumentCache full:https://registry.npmjs.org/commander cache-miss
+35 silly fetch manifest lodash.get@^4.4.2
+36 silly packumentCache full:https://registry.npmjs.org/lodash.get cache-miss
+37 http fetch GET 200 https://registry.npmjs.org/@streamparser%2fjson 144ms (cache miss)
+38 silly packumentCache full:https://registry.npmjs.org/@streamparser%2fjson set size:undefined disposed:false
+39 silly fetch manifest xtend@^4.0.0
+40 silly packumentCache full:https://registry.npmjs.org/xtend cache-miss
+41 http fetch GET 200 https://registry.npmjs.org/xtend 118ms (cache miss)
+42 silly packumentCache full:https://registry.npmjs.org/xtend set size:undefined disposed:false
+43 silly fetch manifest busboy@^1.0.0
+44 silly packumentCache full:https://registry.npmjs.org/busboy cache-miss
+45 http fetch GET 200 https://registry.npmjs.org/lodash.get 315ms (cache miss)
+46 silly packumentCache full:https://registry.npmjs.org/lodash.get set size:undefined disposed:false
+47 silly fetch manifest mkdirp@^0.5.4
+48 silly packumentCache full:https://registry.npmjs.org/mkdirp cache-miss
+49 http fetch GET 200 https://registry.npmjs.org/busboy 90ms (cache miss)
+50 silly packumentCache full:https://registry.npmjs.org/busboy set size:undefined disposed:false
+51 silly fetch manifest append-field@^1.0.0
+52 silly packumentCache full:https://registry.npmjs.org/append-field cache-miss
+53 http fetch GET 200 https://registry.npmjs.org/commander 450ms (cache miss)
+54 silly packumentCache full:https://registry.npmjs.org/commander set size:undefined disposed:false
+55 silly fetch manifest concat-stream@^1.5.2
+56 silly packumentCache full:https://registry.npmjs.org/concat-stream cache-miss
+57 http fetch GET 200 https://registry.npmjs.org/mkdirp 658ms (cache miss)
+58 silly packumentCache full:https://registry.npmjs.org/mkdirp set size:undefined disposed:false
+59 silly fetch manifest png-js@^1.0.0
+60 silly packumentCache full:https://registry.npmjs.org/png-js cache-miss
+61 http fetch GET 200 https://registry.npmjs.org/append-field 662ms (cache miss)
+62 silly packumentCache full:https://registry.npmjs.org/append-field set size:undefined disposed:false
+63 silly fetch manifest fontkit@^1.8.1
+64 silly packumentCache full:https://registry.npmjs.org/fontkit cache-miss
+65 http fetch GET 200 https://registry.npmjs.org/concat-stream 548ms (cache miss)
+66 silly packumentCache full:https://registry.npmjs.org/concat-stream set size:undefined disposed:false
+67 silly fetch manifest crypto-js@^4.2.0
+68 silly packumentCache full:https://registry.npmjs.org/crypto-js cache-miss
+69 http fetch GET 200 https://registry.npmjs.org/png-js 178ms (cache miss)
+70 silly packumentCache full:https://registry.npmjs.org/png-js set size:undefined disposed:false
+71 silly fetch manifest jpeg-exif@^1.1.4
+72 silly packumentCache full:https://registry.npmjs.org/jpeg-exif cache-miss
+73 http fetch GET 200 https://registry.npmjs.org/crypto-js 209ms (cache miss)
+74 silly packumentCache full:https://registry.npmjs.org/crypto-js set size:undefined disposed:false
+75 silly fetch manifest linebreak@^1.0.2
+76 silly packumentCache full:https://registry.npmjs.org/linebreak cache-miss
+77 http fetch GET 200 https://registry.npmjs.org/fontkit 382ms (cache miss)
+78 silly packumentCache full:https://registry.npmjs.org/fontkit set size:undefined disposed:false
+79 http fetch GET 200 https://registry.npmjs.org/linebreak 202ms (cache miss)
+80 silly packumentCache full:https://registry.npmjs.org/linebreak set size:undefined disposed:false
+81 http fetch GET 200 https://registry.npmjs.org/jpeg-exif 1844ms (cache miss)
+82 silly packumentCache full:https://registry.npmjs.org/jpeg-exif set size:undefined disposed:false
+83 silly placeDep ROOT @streamparser/json@0.0.6 OK for: json2csv@6.0.0-alpha.2 want: ^0.0.6
+84 silly placeDep ROOT commander@6.2.1 OK for: json2csv@6.0.0-alpha.2 want: ^6.2.0
+85 silly placeDep ROOT lodash.get@4.4.2 OK for: json2csv@6.0.0-alpha.2 want: ^4.4.2
+86 silly placeDep ROOT append-field@1.0.0 OK for: multer@1.4.5-lts.2 want: ^1.0.0
+87 silly placeDep ROOT busboy@1.6.0 OK for: multer@1.4.5-lts.2 want: ^1.0.0
+88 silly placeDep ROOT concat-stream@1.6.2 OK for: multer@1.4.5-lts.2 want: ^1.5.2
+89 silly placeDep ROOT mkdirp@0.5.6 OK for: multer@1.4.5-lts.2 want: ^0.5.4
+90 silly placeDep ROOT xtend@4.0.2 OK for: multer@1.4.5-lts.2 want: ^4.0.0
+91 silly fetch manifest streamsearch@^1.1.0
+92 silly packumentCache full:https://registry.npmjs.org/streamsearch cache-miss
+93 silly fetch manifest buffer-from@^1.0.0
+94 silly packumentCache full:https://registry.npmjs.org/buffer-from cache-miss
+95 silly fetch manifest readable-stream@^2.2.2
+96 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-miss
+97 http fetch GET 200 https://registry.npmjs.org/streamsearch 148ms (cache miss)
+98 silly packumentCache full:https://registry.npmjs.org/streamsearch set size:undefined disposed:false
+99 silly fetch manifest typedarray@^0.0.6
+100 silly packumentCache full:https://registry.npmjs.org/typedarray cache-miss
+101 http fetch GET 200 https://registry.npmjs.org/buffer-from 148ms (cache miss)
+102 silly packumentCache full:https://registry.npmjs.org/buffer-from set size:undefined disposed:false
+103 silly fetch manifest minimist@^1.2.6
+104 silly packumentCache full:https://registry.npmjs.org/minimist cache-miss
+105 http fetch GET 200 https://registry.npmjs.org/readable-stream 196ms (cache miss)
+106 silly packumentCache full:https://registry.npmjs.org/readable-stream set size:undefined disposed:false
+107 http fetch GET 200 https://registry.npmjs.org/typedarray 196ms (cache miss)
+108 silly packumentCache full:https://registry.npmjs.org/typedarray set size:undefined disposed:false
+109 http fetch GET 200 https://registry.npmjs.org/minimist 375ms (cache miss)
+110 silly packumentCache full:https://registry.npmjs.org/minimist set size:undefined disposed:false
+111 silly placeDep ROOT streamsearch@1.1.0 OK for: busboy@1.6.0 want: ^1.1.0
+112 silly placeDep ROOT buffer-from@1.1.2 OK for: concat-stream@1.6.2 want: ^1.0.0
+113 silly placeDep ROOT readable-stream@2.3.8 OK for: concat-stream@1.6.2 want: ^2.2.2
+114 silly placeDep ROOT typedarray@0.0.6 OK for: concat-stream@1.6.2 want: ^0.0.6
+115 silly fetch manifest isarray@~1.0.0
+116 silly packumentCache full:https://registry.npmjs.org/isarray cache-miss
+117 silly fetch manifest safe-buffer@~5.1.1
+118 silly packumentCache full:https://registry.npmjs.org/safe-buffer cache-miss
+119 silly fetch manifest core-util-is@~1.0.0
+120 silly packumentCache full:https://registry.npmjs.org/core-util-is cache-miss
+121 http fetch GET 200 https://registry.npmjs.org/core-util-is 141ms (cache miss)
+122 silly packumentCache full:https://registry.npmjs.org/core-util-is set size:undefined disposed:false
+123 silly fetch manifest string_decoder@~1.1.1
+124 silly packumentCache full:https://registry.npmjs.org/string_decoder cache-miss
+125 http fetch GET 200 https://registry.npmjs.org/isarray 191ms (cache miss)
+126 silly packumentCache full:https://registry.npmjs.org/isarray set size:undefined disposed:false
+127 silly fetch manifest util-deprecate@~1.0.1
+128 silly packumentCache full:https://registry.npmjs.org/util-deprecate cache-miss
+129 http fetch GET 200 https://registry.npmjs.org/safe-buffer 264ms (cache miss)
+130 silly packumentCache full:https://registry.npmjs.org/safe-buffer set size:undefined disposed:false
+131 silly fetch manifest process-nextick-args@~2.0.0
+132 silly packumentCache full:https://registry.npmjs.org/process-nextick-args cache-miss
+133 http fetch GET 200 https://registry.npmjs.org/util-deprecate 189ms (cache miss)
+134 silly packumentCache full:https://registry.npmjs.org/util-deprecate set size:undefined disposed:false
+135 http fetch GET 200 https://registry.npmjs.org/string_decoder 221ms (cache miss)
+136 silly packumentCache full:https://registry.npmjs.org/string_decoder set size:undefined disposed:false
+137 http fetch GET 200 https://registry.npmjs.org/process-nextick-args 187ms (cache miss)
+138 silly packumentCache full:https://registry.npmjs.org/process-nextick-args set size:undefined disposed:false
+139 silly placeDep ROOT minimist@1.2.8 OK for: mkdirp@0.5.6 want: ^1.2.6
+140 silly placeDep ROOT crypto-js@4.2.0 OK for: pdfkit@0.15.2 want: ^4.2.0
+141 silly placeDep ROOT fontkit@1.9.0 OK for: pdfkit@0.15.2 want: ^1.8.1
+142 silly placeDep ROOT jpeg-exif@1.1.4 OK for: pdfkit@0.15.2 want: ^1.1.4
+143 silly placeDep ROOT linebreak@1.1.0 OK for: pdfkit@0.15.2 want: ^1.0.2
+144 silly placeDep ROOT png-js@1.1.0 OK for: pdfkit@0.15.2 want: ^1.0.0
+145 silly fetch manifest dfa@^1.2.0
+146 silly packumentCache full:https://registry.npmjs.org/dfa cache-miss
+147 silly fetch manifest clone@^2.1.2
+148 silly packumentCache full:https://registry.npmjs.org/clone cache-miss
+149 silly fetch manifest brotli@^1.3.2
+150 silly packumentCache full:https://registry.npmjs.org/brotli cache-miss
+151 http fetch GET 200 https://registry.npmjs.org/dfa 73ms (cache miss)
+152 silly packumentCache full:https://registry.npmjs.org/dfa set size:undefined disposed:false
+153 silly fetch manifest deep-equal@^2.0.5
+154 silly packumentCache full:https://registry.npmjs.org/deep-equal cache-miss
+155 http fetch GET 200 https://registry.npmjs.org/clone 111ms (cache miss)
+156 silly packumentCache full:https://registry.npmjs.org/clone set size:undefined disposed:false
+157 silly fetch manifest restructure@^2.0.1
+158 silly packumentCache full:https://registry.npmjs.org/restructure cache-miss
+159 http fetch GET 200 https://registry.npmjs.org/deep-equal 102ms (cache miss)
+160 silly packumentCache full:https://registry.npmjs.org/deep-equal set size:undefined disposed:false
+161 silly fetch manifest @swc/helpers@^0.3.13
+162 silly packumentCache full:https://registry.npmjs.org/@swc%2fhelpers cache-miss
+163 http fetch GET 200 https://registry.npmjs.org/restructure 77ms (cache miss)
+164 silly packumentCache full:https://registry.npmjs.org/restructure set size:undefined disposed:false
+165 silly fetch manifest tiny-inflate@^1.0.3
+166 silly packumentCache full:https://registry.npmjs.org/tiny-inflate cache-miss
+167 http fetch GET 200 https://registry.npmjs.org/tiny-inflate 50ms (cache miss)
+168 silly packumentCache full:https://registry.npmjs.org/tiny-inflate set size:undefined disposed:false
+169 silly fetch manifest unicode-trie@^2.0.0
+170 silly packumentCache full:https://registry.npmjs.org/unicode-trie cache-miss
+171 http fetch GET 200 https://registry.npmjs.org/@swc%2fhelpers 194ms (cache miss)
+172 silly packumentCache full:https://registry.npmjs.org/@swc%2fhelpers set size:undefined disposed:false
+173 silly fetch manifest unicode-properties@^1.3.1
+174 silly packumentCache full:https://registry.npmjs.org/unicode-properties cache-miss
+175 http fetch GET 200 https://registry.npmjs.org/brotli 458ms (cache miss)
+176 silly packumentCache full:https://registry.npmjs.org/brotli set size:undefined disposed:false
+177 silly fetch manifest base64-js@0.0.8
+178 silly packumentCache full:https://registry.npmjs.org/base64-js cache-miss
+179 http fetch GET 200 https://registry.npmjs.org/unicode-trie 233ms (cache miss)
+180 silly packumentCache full:https://registry.npmjs.org/unicode-trie set size:undefined disposed:false
+181 silly fetch manifest browserify-zlib@^0.2.0
+182 silly packumentCache full:https://registry.npmjs.org/browserify-zlib cache-miss
+183 http fetch GET 200 https://registry.npmjs.org/unicode-properties 163ms (cache miss)
+184 silly packumentCache full:https://registry.npmjs.org/unicode-properties set size:undefined disposed:false
+185 http fetch GET 200 https://registry.npmjs.org/browserify-zlib 127ms (cache miss)
+186 silly packumentCache full:https://registry.npmjs.org/browserify-zlib set size:undefined disposed:false
+187 http fetch GET 200 https://registry.npmjs.org/base64-js 154ms (cache miss)
+188 silly packumentCache full:https://registry.npmjs.org/base64-js set size:undefined disposed:false
+189 silly placeDep ROOT @swc/helpers@0.3.17 OK for: fontkit@1.9.0 want: ^0.3.13
+190 silly placeDep ROOT brotli@1.3.3 OK for: fontkit@1.9.0 want: ^1.3.2
+191 silly placeDep ROOT clone@2.1.2 OK for: fontkit@1.9.0 want: ^2.1.2
+192 silly placeDep ROOT deep-equal@2.2.3 OK for: fontkit@1.9.0 want: ^2.0.5
+193 silly placeDep ROOT dfa@1.2.0 OK for: fontkit@1.9.0 want: ^1.2.0
+194 silly placeDep ROOT restructure@2.0.1 OK for: fontkit@1.9.0 want: ^2.0.1
+195 silly placeDep ROOT tiny-inflate@1.0.3 OK for: fontkit@1.9.0 want: ^1.0.3
+196 silly placeDep ROOT unicode-properties@1.4.1 OK for: fontkit@1.9.0 want: ^1.3.1
+197 silly placeDep ROOT unicode-trie@2.0.0 OK for: fontkit@1.9.0 want: ^2.0.0
+198 silly fetch manifest tslib@^2.4.0
+199 silly packumentCache full:https://registry.npmjs.org/tslib cache-miss
+200 silly fetch manifest base64-js@^1.1.2
+201 silly packumentCache full:https://registry.npmjs.org/base64-js cache-miss
+202 silly fetch manifest array-buffer-byte-length@^1.0.0
+203 silly packumentCache full:https://registry.npmjs.org/array-buffer-byte-length cache-miss
+204 http fetch GET 200 https://registry.npmjs.org/base64-js 292ms (cache hit)
+205 silly packumentCache full:https://registry.npmjs.org/base64-js set size:41270 disposed:false
+206 silly fetch manifest call-bind@^1.0.5
+207 silly packumentCache full:https://registry.npmjs.org/call-bind cache-miss
+208 http fetch GET 200 https://registry.npmjs.org/array-buffer-byte-length 327ms (cache miss)
+209 silly packumentCache full:https://registry.npmjs.org/array-buffer-byte-length set size:undefined disposed:false
+210 silly fetch manifest es-get-iterator@^1.1.3
+211 silly packumentCache full:https://registry.npmjs.org/es-get-iterator cache-miss
+212 http fetch GET 200 https://registry.npmjs.org/es-get-iterator 59ms (cache miss)
+213 silly packumentCache full:https://registry.npmjs.org/es-get-iterator set size:undefined disposed:false
+214 silly fetch manifest is-arguments@^1.1.1
+215 silly packumentCache full:https://registry.npmjs.org/is-arguments cache-miss
+216 http fetch GET 200 https://registry.npmjs.org/tslib 414ms (cache miss)
+217 silly packumentCache full:https://registry.npmjs.org/tslib set size:undefined disposed:false
+218 silly fetch manifest is-array-buffer@^3.0.2
+219 silly packumentCache full:https://registry.npmjs.org/is-array-buffer cache-miss
+220 http fetch GET 200 https://registry.npmjs.org/call-bind 114ms (cache miss)
+221 silly packumentCache full:https://registry.npmjs.org/call-bind set size:undefined disposed:false
+222 silly fetch manifest is-date-object@^1.0.5
+223 silly packumentCache full:https://registry.npmjs.org/is-date-object cache-miss
+224 http fetch GET 200 https://registry.npmjs.org/is-arguments 125ms (cache miss)
+225 silly packumentCache full:https://registry.npmjs.org/is-arguments set size:undefined disposed:false
+226 silly fetch manifest is-regex@^1.1.4
+227 silly packumentCache full:https://registry.npmjs.org/is-regex cache-miss
+228 http fetch GET 200 https://registry.npmjs.org/is-date-object 69ms (cache miss)
+229 silly packumentCache full:https://registry.npmjs.org/is-date-object set size:undefined disposed:false
+230 silly fetch manifest is-shared-array-buffer@^1.0.2
+231 silly packumentCache full:https://registry.npmjs.org/is-shared-array-buffer cache-miss
+232 http fetch GET 200 https://registry.npmjs.org/is-regex 62ms (cache miss)
+233 silly packumentCache full:https://registry.npmjs.org/is-regex set size:undefined disposed:false
+234 silly fetch manifest isarray@^2.0.5
+235 silly packumentCache full:https://registry.npmjs.org/isarray cache-miss
+236 http fetch GET 200 https://registry.npmjs.org/is-shared-array-buffer 56ms (cache miss)
+237 silly packumentCache full:https://registry.npmjs.org/is-shared-array-buffer set size:undefined disposed:false
+238 silly fetch manifest object-is@^1.1.5
+239 silly packumentCache full:https://registry.npmjs.org/object-is cache-miss
+240 http fetch GET 200 https://registry.npmjs.org/isarray 22ms (cache hit)
+241 silly packumentCache full:https://registry.npmjs.org/isarray set size:17392 disposed:false
+242 silly fetch manifest object-keys@^1.1.1
+243 silly packumentCache full:https://registry.npmjs.org/object-keys cache-miss
+244 http fetch GET 200 https://registry.npmjs.org/object-is 67ms (cache miss)
+245 silly packumentCache full:https://registry.npmjs.org/object-is set size:undefined disposed:false
+246 silly fetch manifest object.assign@^4.1.4
+247 silly packumentCache full:https://registry.npmjs.org/object.assign cache-miss
+248 http fetch GET 200 https://registry.npmjs.org/object-keys 73ms (cache miss)
+249 silly packumentCache full:https://registry.npmjs.org/object-keys set size:undefined disposed:false
+250 silly fetch manifest regexp.prototype.flags@^1.5.1
+251 silly packumentCache full:https://registry.npmjs.org/regexp.prototype.flags cache-miss
+252 http fetch GET 200 https://registry.npmjs.org/regexp.prototype.flags 90ms (cache miss)
+253 silly packumentCache full:https://registry.npmjs.org/regexp.prototype.flags set size:undefined disposed:false
+254 silly fetch manifest which-boxed-primitive@^1.0.2
+255 silly packumentCache full:https://registry.npmjs.org/which-boxed-primitive cache-miss
+256 http fetch GET 200 https://registry.npmjs.org/is-array-buffer 396ms (cache miss)
+257 silly packumentCache full:https://registry.npmjs.org/is-array-buffer set size:undefined disposed:false
+258 silly fetch manifest which-collection@^1.0.1
+259 silly packumentCache full:https://registry.npmjs.org/which-collection cache-miss
+260 http fetch GET 200 https://registry.npmjs.org/object.assign 145ms (cache miss)
+261 silly packumentCache full:https://registry.npmjs.org/object.assign set size:undefined disposed:false
+262 silly fetch manifest which-typed-array@^1.1.13
+263 silly packumentCache full:https://registry.npmjs.org/which-typed-array cache-miss
+264 http fetch GET 200 https://registry.npmjs.org/which-boxed-primitive 57ms (cache miss)
+265 silly packumentCache full:https://registry.npmjs.org/which-boxed-primitive set size:undefined disposed:false
+266 silly fetch manifest base64-js@^1.3.0
+267 silly packumentCache full:https://registry.npmjs.org/base64-js cache-hit
+268 silly fetch manifest pako@^0.2.5
+269 silly packumentCache full:https://registry.npmjs.org/pako cache-miss
+270 http fetch GET 200 https://registry.npmjs.org/which-collection 72ms (cache miss)
+271 silly packumentCache full:https://registry.npmjs.org/which-collection set size:undefined disposed:false
+272 http fetch GET 200 https://registry.npmjs.org/which-typed-array 59ms (cache miss)
+273 silly packumentCache full:https://registry.npmjs.org/which-typed-array set size:undefined disposed:false
+274 http fetch GET 200 https://registry.npmjs.org/pako 76ms (cache miss)
+275 silly packumentCache full:https://registry.npmjs.org/pako set size:undefined disposed:false
+276 silly placeDep ROOT tslib@2.8.1 OK for: @swc/helpers@0.3.17 want: ^2.4.0
+277 silly placeDep ROOT base64-js@1.5.1 OK for: brotli@1.3.3 want: ^1.1.2
+278 silly placeDep ROOT array-buffer-byte-length@1.0.2 OK for: deep-equal@2.2.3 want: ^1.0.0
+279 silly placeDep ROOT call-bind@1.0.9 OK for: deep-equal@2.2.3 want: ^1.0.5
+280 silly placeDep ROOT es-get-iterator@1.1.3 OK for: deep-equal@2.2.3 want: ^1.1.3
+281 silly placeDep ROOT is-arguments@1.2.0 OK for: deep-equal@2.2.3 want: ^1.1.1
+282 silly placeDep ROOT is-array-buffer@3.0.5 OK for: deep-equal@2.2.3 want: ^3.0.2
+283 silly placeDep ROOT is-date-object@1.1.0 OK for: deep-equal@2.2.3 want: ^1.0.5
+284 silly placeDep ROOT is-regex@1.2.1 OK for: deep-equal@2.2.3 want: ^1.1.4
+285 silly placeDep ROOT is-shared-array-buffer@1.0.4 OK for: deep-equal@2.2.3 want: ^1.0.2
+286 silly placeDep ROOT isarray@2.0.5 OK for: deep-equal@2.2.3 want: ^2.0.5
+287 silly placeDep ROOT object-is@1.1.6 OK for: deep-equal@2.2.3 want: ^1.1.5
+288 silly placeDep ROOT object-keys@1.1.1 OK for: deep-equal@2.2.3 want: ^1.1.1
+289 silly placeDep ROOT object.assign@4.1.7 OK for: deep-equal@2.2.3 want: ^4.1.4
+290 silly placeDep ROOT regexp.prototype.flags@1.5.4 OK for: deep-equal@2.2.3 want: ^1.5.1
+291 silly placeDep ROOT which-boxed-primitive@1.1.1 OK for: deep-equal@2.2.3 want: ^1.0.2
+292 silly placeDep ROOT which-collection@1.0.2 OK for: deep-equal@2.2.3 want: ^1.0.1
+293 silly placeDep ROOT which-typed-array@1.1.20 OK for: deep-equal@2.2.3 want: ^1.1.13
+294 silly fetch manifest is-array-buffer@^3.0.5
+295 silly packumentCache full:https://registry.npmjs.org/is-array-buffer cache-miss
+296 silly fetch manifest set-function-length@^1.2.2
+297 silly packumentCache full:https://registry.npmjs.org/set-function-length cache-miss
+298 silly fetch manifest is-map@^2.0.2
+299 silly packumentCache full:https://registry.npmjs.org/is-map cache-miss
+300 http fetch GET 200 https://registry.npmjs.org/is-array-buffer 111ms (cache hit)
+301 silly packumentCache full:https://registry.npmjs.org/is-array-buffer set size:33562 disposed:false
+302 silly fetch manifest is-set@^2.0.2
+303 silly packumentCache full:https://registry.npmjs.org/is-set cache-miss
+304 http fetch GET 200 https://registry.npmjs.org/is-map 94ms (cache miss)
+305 silly packumentCache full:https://registry.npmjs.org/is-map set size:undefined disposed:false
+306 silly fetch manifest is-string@^1.0.7
+307 silly packumentCache full:https://registry.npmjs.org/is-string cache-miss
+308 http fetch GET 200 https://registry.npmjs.org/set-function-length 116ms (cache miss)
+309 silly packumentCache full:https://registry.npmjs.org/set-function-length set size:undefined disposed:false
+310 silly fetch manifest stop-iteration-iterator@^1.0.0
+311 silly packumentCache full:https://registry.npmjs.org/stop-iteration-iterator cache-miss
+312 http fetch GET 200 https://registry.npmjs.org/is-set 51ms (cache miss)
+313 silly packumentCache full:https://registry.npmjs.org/is-set set size:undefined disposed:false
+314 silly fetch manifest has-tostringtag@^1.0.2
+315 silly packumentCache full:https://registry.npmjs.org/has-tostringtag cache-miss
+316 http fetch GET 200 https://registry.npmjs.org/is-string 65ms (cache miss)
+317 silly packumentCache full:https://registry.npmjs.org/is-string set size:undefined disposed:false
+318 silly fetch manifest has-tostringtag@^1.0.2
+319 silly packumentCache full:https://registry.npmjs.org/has-tostringtag cache-miss
+320 http fetch GET 200 https://registry.npmjs.org/stop-iteration-iterator 56ms (cache miss)
+321 silly packumentCache full:https://registry.npmjs.org/stop-iteration-iterator set size:undefined disposed:false
+322 silly fetch manifest has-tostringtag@^1.0.2
+323 silly packumentCache full:https://registry.npmjs.org/has-tostringtag cache-miss
+324 http fetch GET 200 https://registry.npmjs.org/has-tostringtag 43ms (cache miss)
+325 silly packumentCache full:https://registry.npmjs.org/has-tostringtag set size:undefined disposed:false
+326 silly fetch manifest define-properties@^1.2.1
+327 silly packumentCache full:https://registry.npmjs.org/define-properties cache-miss
+328 http fetch GET 200 https://registry.npmjs.org/has-tostringtag 48ms (cache miss)
+329 silly packumentCache full:https://registry.npmjs.org/has-tostringtag set size:undefined disposed:false
+330 silly fetch manifest define-properties@^1.2.1
+331 silly packumentCache full:https://registry.npmjs.org/define-properties cache-miss
+332 http fetch GET 200 https://registry.npmjs.org/has-tostringtag 123ms (cache miss)
+333 silly packumentCache full:https://registry.npmjs.org/has-tostringtag set size:undefined disposed:false
+334 silly fetch manifest define-properties@^1.2.1
+335 silly packumentCache full:https://registry.npmjs.org/define-properties cache-miss
+336 http fetch GET 200 https://registry.npmjs.org/define-properties 112ms (cache miss)
+337 silly packumentCache full:https://registry.npmjs.org/define-properties set size:undefined disposed:false
+338 silly fetch manifest set-function-name@^2.0.2
+339 silly packumentCache full:https://registry.npmjs.org/set-function-name cache-miss
+340 http fetch GET 200 https://registry.npmjs.org/define-properties 81ms (cache miss)
+341 silly packumentCache full:https://registry.npmjs.org/define-properties set size:undefined disposed:false
+342 silly fetch manifest is-bigint@^1.1.0
+343 silly packumentCache full:https://registry.npmjs.org/is-bigint cache-miss
+344 http fetch GET 200 https://registry.npmjs.org/define-properties 117ms (cache miss)
+345 silly packumentCache full:https://registry.npmjs.org/define-properties set size:undefined disposed:false
+346 silly fetch manifest is-boolean-object@^1.2.1
+347 silly packumentCache full:https://registry.npmjs.org/is-boolean-object cache-miss
+348 http fetch GET 200 https://registry.npmjs.org/set-function-name 146ms (cache miss)
+349 silly packumentCache full:https://registry.npmjs.org/set-function-name set size:undefined disposed:false
+350 silly fetch manifest is-number-object@^1.1.1
+351 silly packumentCache full:https://registry.npmjs.org/is-number-object cache-miss
+352 http fetch GET 200 https://registry.npmjs.org/is-bigint 143ms (cache miss)
+353 silly packumentCache full:https://registry.npmjs.org/is-bigint set size:undefined disposed:false
+354 silly fetch manifest is-string@^1.1.1
+355 silly packumentCache full:https://registry.npmjs.org/is-string cache-miss
+356 http fetch GET 200 https://registry.npmjs.org/is-string 58ms (cache hit)
+357 silly packumentCache full:https://registry.npmjs.org/is-string set size:29636 disposed:false
+358 silly fetch manifest is-symbol@^1.1.1
+359 silly packumentCache full:https://registry.npmjs.org/is-symbol cache-miss
+360 http fetch GET 200 https://registry.npmjs.org/is-boolean-object 128ms (cache miss)
+361 silly packumentCache full:https://registry.npmjs.org/is-boolean-object set size:undefined disposed:false
+362 silly fetch manifest is-map@^2.0.3
+363 silly packumentCache full:https://registry.npmjs.org/is-map cache-miss
+364 http fetch GET 200 https://registry.npmjs.org/is-number-object 97ms (cache miss)
+365 silly packumentCache full:https://registry.npmjs.org/is-number-object set size:undefined disposed:false
+366 silly fetch manifest is-set@^2.0.3
+367 silly packumentCache full:https://registry.npmjs.org/is-set cache-miss
+368 http fetch GET 200 https://registry.npmjs.org/is-map 61ms (cache hit)
+369 silly packumentCache full:https://registry.npmjs.org/is-map set size:18079 disposed:false
+370 silly fetch manifest is-weakmap@^2.0.2
+371 silly packumentCache full:https://registry.npmjs.org/is-weakmap cache-miss
+372 http fetch GET 200 https://registry.npmjs.org/is-set 67ms (cache hit)
+373 silly packumentCache full:https://registry.npmjs.org/is-set set size:16614 disposed:false
+374 silly fetch manifest is-weakset@^2.0.3
+375 silly packumentCache full:https://registry.npmjs.org/is-weakset cache-miss
+376 http fetch GET 200 https://registry.npmjs.org/is-symbol 111ms (cache miss)
+377 silly packumentCache full:https://registry.npmjs.org/is-symbol set size:undefined disposed:false
+378 silly fetch manifest available-typed-arrays@^1.0.7
+379 silly packumentCache full:https://registry.npmjs.org/available-typed-arrays cache-miss
+380 http fetch GET 200 https://registry.npmjs.org/is-weakset 112ms (cache miss)
+381 silly packumentCache full:https://registry.npmjs.org/is-weakset set size:undefined disposed:false
+382 silly fetch manifest for-each@^0.3.5
+383 silly packumentCache full:https://registry.npmjs.org/for-each cache-miss
+384 http fetch GET 200 https://registry.npmjs.org/available-typed-arrays 82ms (cache miss)
+385 silly packumentCache full:https://registry.npmjs.org/available-typed-arrays set size:undefined disposed:false
+386 http fetch GET 200 https://registry.npmjs.org/for-each 48ms (cache miss)
+387 silly packumentCache full:https://registry.npmjs.org/for-each set size:undefined disposed:false
+388 http fetch GET 200 https://registry.npmjs.org/is-weakmap 296ms (cache miss)
+389 silly packumentCache full:https://registry.npmjs.org/is-weakmap set size:undefined disposed:false
+390 silly placeDep ROOT set-function-length@1.2.2 OK for: call-bind@1.0.9 want: ^1.2.2
+391 silly fetch manifest define-data-property@^1.1.4
+392 silly packumentCache full:https://registry.npmjs.org/define-data-property cache-miss
+393 silly fetch manifest has-property-descriptors@^1.0.2
+394 silly packumentCache full:https://registry.npmjs.org/has-property-descriptors cache-miss
+395 http fetch GET 200 https://registry.npmjs.org/has-property-descriptors 54ms (cache miss)
+396 silly packumentCache full:https://registry.npmjs.org/has-property-descriptors set size:undefined disposed:false
+397 http fetch GET 200 https://registry.npmjs.org/define-data-property 56ms (cache miss)
+398 silly packumentCache full:https://registry.npmjs.org/define-data-property set size:undefined disposed:false
+399 silly placeDep ROOT is-map@2.0.3 OK for: es-get-iterator@1.1.3 want: ^2.0.2
+400 silly placeDep ROOT is-set@2.0.3 OK for: es-get-iterator@1.1.3 want: ^2.0.2
+401 silly placeDep ROOT is-string@1.1.1 OK for: es-get-iterator@1.1.3 want: ^1.0.7
+402 silly placeDep ROOT stop-iteration-iterator@1.1.0 OK for: es-get-iterator@1.1.3 want: ^1.0.0
+403 silly fetch manifest internal-slot@^1.1.0
+404 silly packumentCache full:https://registry.npmjs.org/internal-slot cache-miss
+405 http fetch GET 200 https://registry.npmjs.org/internal-slot 55ms (cache miss)
+406 silly packumentCache full:https://registry.npmjs.org/internal-slot set size:undefined disposed:false
+407 silly placeDep ROOT has-tostringtag@1.0.2 OK for: is-arguments@1.2.0 want: ^1.0.2
+408 silly placeDep node_modules/linebreak base64-js@0.0.8 OK for: linebreak@1.1.0 want: 0.0.8
+409 silly placeDep ROOT define-properties@1.2.1 OK for: object-is@1.1.6 want: ^1.2.1
+410 silly fetch manifest define-data-property@^1.0.1
+411 silly packumentCache full:https://registry.npmjs.org/define-data-property cache-miss
+412 silly fetch manifest has-property-descriptors@^1.0.0
+413 silly packumentCache full:https://registry.npmjs.org/has-property-descriptors cache-miss
+414 http fetch GET 200 https://registry.npmjs.org/define-data-property 15ms (cache hit)
+415 silly packumentCache full:https://registry.npmjs.org/define-data-property set size:28048 disposed:false
+416 http fetch GET 200 https://registry.npmjs.org/has-property-descriptors 21ms (cache hit)
+417 silly packumentCache full:https://registry.npmjs.org/has-property-descriptors set size:12452 disposed:false
+418 silly placeDep ROOT define-data-property@1.1.4 OK for: define-properties@1.2.1 want: ^1.0.1
+419 silly placeDep ROOT has-property-descriptors@1.0.2 OK for: define-properties@1.2.1 want: ^1.0.0
+420 silly placeDep ROOT browserify-zlib@0.2.0 OK for: png-js@1.1.0 want: ^0.2.0
+421 silly fetch manifest pako@~1.0.5
+422 silly packumentCache full:https://registry.npmjs.org/pako cache-miss
+423 http fetch GET 200 https://registry.npmjs.org/pako 14ms (cache hit)
+424 silly packumentCache full:https://registry.npmjs.org/pako set size:74234 disposed:false
+425 silly placeDep ROOT pako@1.0.11 OK for: browserify-zlib@0.2.0 want: ~1.0.5
+426 silly placeDep ROOT core-util-is@1.0.3 OK for: readable-stream@2.3.8 want: ~1.0.0
+427 silly placeDep node_modules/readable-stream isarray@1.0.0 OK for: readable-stream@2.3.8 want: ~1.0.0
+428 silly placeDep ROOT process-nextick-args@2.0.1 OK for: readable-stream@2.3.8 want: ~2.0.0
+429 silly placeDep node_modules/readable-stream safe-buffer@5.1.2 OK for: readable-stream@2.3.8 want: ~5.1.1
+430 silly placeDep ROOT string_decoder@1.1.1 OK for: readable-stream@2.3.8 want: ~1.1.1
+431 silly placeDep ROOT util-deprecate@1.0.2 OK for: readable-stream@2.3.8 want: ~1.0.1
+432 silly fetch manifest safe-buffer@~5.1.0
+433 silly packumentCache full:https://registry.npmjs.org/safe-buffer cache-miss
+434 http fetch GET 200 https://registry.npmjs.org/safe-buffer 25ms (cache hit)
+435 silly packumentCache full:https://registry.npmjs.org/safe-buffer set size:41183 disposed:false
+436 silly placeDep ROOT set-function-name@2.0.2 OK for: regexp.prototype.flags@1.5.4 want: ^2.0.2
+437 silly fetch manifest functions-have-names@^1.2.3
+438 silly packumentCache full:https://registry.npmjs.org/functions-have-names cache-miss
+439 http fetch GET 200 https://registry.npmjs.org/functions-have-names 36ms (cache miss)
+440 silly packumentCache full:https://registry.npmjs.org/functions-have-names set size:undefined disposed:false
+441 silly placeDep ROOT functions-have-names@1.2.3 OK for: set-function-name@2.0.2 want: ^1.2.3
+442 silly placeDep ROOT internal-slot@1.1.0 OK for: stop-iteration-iterator@1.1.0 want: ^1.1.0
+443 silly placeDep node_modules/string_decoder safe-buffer@5.1.2 OK for: string_decoder@1.1.1 want: ~5.1.0
+444 silly placeDep node_modules/unicode-trie pako@0.2.9 OK for: unicode-trie@2.0.0 want: ^0.2.5
+445 silly placeDep ROOT is-bigint@1.1.0 OK for: which-boxed-primitive@1.1.1 want: ^1.1.0
+446 silly placeDep ROOT is-boolean-object@1.2.2 OK for: which-boxed-primitive@1.1.1 want: ^1.2.1
+447 silly placeDep ROOT is-number-object@1.1.1 OK for: which-boxed-primitive@1.1.1 want: ^1.1.1
+448 silly placeDep ROOT is-symbol@1.1.1 OK for: which-boxed-primitive@1.1.1 want: ^1.1.1
+449 silly fetch manifest has-bigints@^1.0.2
+450 silly packumentCache full:https://registry.npmjs.org/has-bigints cache-miss
+451 silly fetch manifest safe-regex-test@^1.1.0
+452 silly packumentCache full:https://registry.npmjs.org/safe-regex-test cache-miss
+453 http fetch GET 200 https://registry.npmjs.org/has-bigints 46ms (cache miss)
+454 silly packumentCache full:https://registry.npmjs.org/has-bigints set size:undefined disposed:false
+455 http fetch GET 200 https://registry.npmjs.org/safe-regex-test 52ms (cache miss)
+456 silly packumentCache full:https://registry.npmjs.org/safe-regex-test set size:undefined disposed:false
+457 silly placeDep ROOT has-bigints@1.1.0 OK for: is-bigint@1.1.0 want: ^1.0.2
+458 silly placeDep ROOT safe-regex-test@1.1.0 OK for: is-symbol@1.1.1 want: ^1.1.0
+459 silly placeDep ROOT is-weakmap@2.0.2 OK for: which-collection@1.0.2 want: ^2.0.2
+460 silly placeDep ROOT is-weakset@2.0.4 OK for: which-collection@1.0.2 want: ^2.0.3
+461 silly placeDep ROOT available-typed-arrays@1.0.7 OK for: which-typed-array@1.1.20 want: ^1.0.7
+462 silly placeDep ROOT for-each@0.3.5 OK for: which-typed-array@1.1.20 want: ^0.3.5
+463 silly fetch manifest possible-typed-array-names@^1.0.0
+464 silly packumentCache full:https://registry.npmjs.org/possible-typed-array-names cache-miss
+465 silly fetch manifest is-callable@^1.2.7
+466 silly packumentCache full:https://registry.npmjs.org/is-callable cache-miss
+467 http fetch GET 200 https://registry.npmjs.org/possible-typed-array-names 38ms (cache miss)
+468 silly packumentCache full:https://registry.npmjs.org/possible-typed-array-names set size:undefined disposed:false
+469 http fetch GET 200 https://registry.npmjs.org/is-callable 56ms (cache miss)
+470 silly packumentCache full:https://registry.npmjs.org/is-callable set size:undefined disposed:false
+471 silly placeDep ROOT possible-typed-array-names@1.1.0 OK for: available-typed-arrays@1.0.7 want: ^1.0.0
+472 silly placeDep ROOT is-callable@1.2.7 OK for: for-each@0.3.5 want: ^1.2.7
+473 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\brotli' ]
+474 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\crypto-js' ]
+475 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\fontkit' ]
+476 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\fsevents' ]
+477 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\jpeg-exif' ]
+478 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\pako' ]
+479 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\pdfkit' ]
+480 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\restructure' ]
+481 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\append-field' ]
+482 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\array-buffer-byte-length' ]
+483 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\available-typed-arrays' ]
+484 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\base64-js' ]
+485 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\browserify-zlib' ]
+486 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\buffer-from' ]
+487 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\busboy' ]
+488 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\call-bind' ]
+489 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\clone' ]
+490 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\commander' ]
+491 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\concat-stream' ]
+492 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\core-util-is' ]
+493 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\deep-equal' ]
+494 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\define-data-property' ]
+495 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\define-properties' ]
+496 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\dfa' ]
+497 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\es-get-iterator' ]
+498 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\for-each' ]
+499 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\functions-have-names' ]
+500 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\has-bigints' ]
+501 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\has-property-descriptors' ]
+502 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\has-tostringtag' ]
+503 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\internal-slot' ]
+504 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\is-arguments' ]
+505 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\is-array-buffer' ]
+506 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\is-bigint' ]
+507 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\is-boolean-object' ]
+508 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\is-callable' ]
+509 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\is-date-object' ]
+510 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\is-map' ]
+511 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\is-number-object' ]
+512 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\is-regex' ]
+513 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\is-set' ]
+514 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\is-shared-array-buffer' ]
+515 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\is-string' ]
+516 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\is-symbol' ]
+517 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\is-weakmap' ]
+518 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\is-weakset' ]
+519 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\isarray' ]
+520 silly reify mark retired [
+520 silly reify   'D:\\POS\\backend\\node_modules\\json2csv',
+520 silly reify   'D:\\POS\\backend\\node_modules\\.bin\\json2csv',
+520 silly reify   'D:\\POS\\backend\\node_modules\\.bin\\json2csv.cmd',
+520 silly reify   'D:\\POS\\backend\\node_modules\\.bin\\json2csv.ps1'
+520 silly reify ]
+521 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\linebreak' ]
+522 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\lodash.get' ]
+523 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\minimist' ]
+524 silly reify mark retired [
+524 silly reify   'D:\\POS\\backend\\node_modules\\mkdirp',
+524 silly reify   'D:\\POS\\backend\\node_modules\\.bin\\mkdirp',
+524 silly reify   'D:\\POS\\backend\\node_modules\\.bin\\mkdirp.cmd',
+524 silly reify   'D:\\POS\\backend\\node_modules\\.bin\\mkdirp.ps1'
+524 silly reify ]
+525 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\multer' ]
+526 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\object-is' ]
+527 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\object-keys' ]
+528 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\object.assign' ]
+529 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\png-js' ]
+530 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\possible-typed-array-names' ]
+531 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\process-nextick-args' ]
+532 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\readable-stream' ]
+533 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\regexp.prototype.flags' ]
+534 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\safe-regex-test' ]
+535 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\set-function-length' ]
+536 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\set-function-name' ]
+537 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\stop-iteration-iterator' ]
+538 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\streamsearch' ]
+539 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\string_decoder' ]
+540 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\tiny-inflate' ]
+541 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\tslib' ]
+542 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\typedarray' ]
+543 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\unicode-properties' ]
+544 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\unicode-trie' ]
+545 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\util-deprecate' ]
+546 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\which-boxed-primitive' ]
+547 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\which-collection' ]
+548 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\which-typed-array' ]
+549 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\xtend' ]
+550 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\@streamparser\\json' ]
+551 silly reify mark retired [ 'D:\\POS\\backend\\node_modules\\@swc\\helpers' ]
+552 silly reify moves {
+552 silly reify   'D:\\POS\\backend\\node_modules\\brotli': 'D:\\POS\\backend\\node_modules\\.brotli-9PyknVLZ',
+552 silly reify   'D:\\POS\\backend\\node_modules\\crypto-js': 'D:\\POS\\backend\\node_modules\\.crypto-js-NwRTJrnt',
+552 silly reify   'D:\\POS\\backend\\node_modules\\fontkit': 'D:\\POS\\backend\\node_modules\\.fontkit-8ZbW5HVG',
+552 silly reify   'D:\\POS\\backend\\node_modules\\fsevents': 'D:\\POS\\backend\\node_modules\\.fsevents-gpLiExyL',
+552 silly reify   'D:\\POS\\backend\\node_modules\\jpeg-exif': 'D:\\POS\\backend\\node_modules\\.jpeg-exif-JDD6ugql',
+552 silly reify   'D:\\POS\\backend\\node_modules\\pako': 'D:\\POS\\backend\\node_modules\\.pako-9COzFzLu',
+552 silly reify   'D:\\POS\\backend\\node_modules\\pdfkit': 'D:\\POS\\backend\\node_modules\\.pdfkit-hgpDXn8c',
+552 silly reify   'D:\\POS\\backend\\node_modules\\restructure': 'D:\\POS\\backend\\node_modules\\.restructure-beEMoK9e',
+552 silly reify   'D:\\POS\\backend\\node_modules\\append-field': 'D:\\POS\\backend\\node_modules\\.append-field-SDVU6VM3',
+552 silly reify   'D:\\POS\\backend\\node_modules\\array-buffer-byte-length': 'D:\\POS\\backend\\node_modules\\.array-buffer-byte-length-AYt8Xb2y',
+552 silly reify   'D:\\POS\\backend\\node_modules\\available-typed-arrays': 'D:\\POS\\backend\\node_modules\\.available-typed-arrays-nosKPvwV',
+552 silly reify   'D:\\POS\\backend\\node_modules\\base64-js': 'D:\\POS\\backend\\node_modules\\.base64-js-Y7Rqo1a0',
+552 silly reify   'D:\\POS\\backend\\node_modules\\browserify-zlib': 'D:\\POS\\backend\\node_modules\\.browserify-zlib-E5N0N0dp',
+552 silly reify   'D:\\POS\\backend\\node_modules\\buffer-from': 'D:\\POS\\backend\\node_modules\\.buffer-from-g1VdxMGQ',
+552 silly reify   'D:\\POS\\backend\\node_modules\\busboy': 'D:\\POS\\backend\\node_modules\\.busboy-go0wITD7',
+552 silly reify   'D:\\POS\\backend\\node_modules\\call-bind': 'D:\\POS\\backend\\node_modules\\.call-bind-Fbzm8vFR',
+552 silly reify   'D:\\POS\\backend\\node_modules\\clone': 'D:\\POS\\backend\\node_modules\\.clone-wBHr80Un',
+552 silly reify   'D:\\POS\\backend\\node_modules\\commander': 'D:\\POS\\backend\\node_modules\\.commander-7dwMRW0d',
+552 silly reify   'D:\\POS\\backend\\node_modules\\concat-stream': 'D:\\POS\\backend\\node_modules\\.concat-stream-GM6K8Xvq',
+552 silly reify   'D:\\POS\\backend\\node_modules\\core-util-is': 'D:\\POS\\backend\\node_modules\\.core-util-is-YOS9QoBn',
+552 silly reify   'D:\\POS\\backend\\node_modules\\deep-equal': 'D:\\POS\\backend\\node_modules\\.deep-equal-rB82wc1M',
+552 silly reify   'D:\\POS\\backend\\node_modules\\define-data-property': 'D:\\POS\\backend\\node_modules\\.define-data-property-jbG0Ej2v',
+552 silly reify   'D:\\POS\\backend\\node_modules\\define-properties': 'D:\\POS\\backend\\node_modules\\.define-properties-GGbtwqjT',
+552 silly reify   'D:\\POS\\backend\\node_modules\\dfa': 'D:\\POS\\backend\\node_modules\\.dfa-Syefwn9p',
+552 silly reify   'D:\\POS\\backend\\node_modules\\es-get-iterator': 'D:\\POS\\backend\\node_modules\\.es-get-iterator-9IwugzI5',
+552 silly reify   'D:\\POS\\backend\\node_modules\\for-each': 'D:\\POS\\backend\\node_modules\\.for-each-QHT4mb8Z',
+552 silly reify   'D:\\POS\\backend\\node_modules\\functions-have-names': 'D:\\POS\\backend\\node_modules\\.functions-have-names-77ePNj60',
+552 silly reify   'D:\\POS\\backend\\node_modules\\has-bigints': 'D:\\POS\\backend\\node_modules\\.has-bigints-CJZHzqTD',
+552 silly reify   'D:\\POS\\backend\\node_modules\\has-property-descriptors': 'D:\\POS\\backend\\node_modules\\.has-property-descriptors-KND1zQmn',
+552 silly reify   'D:\\POS\\backend\\node_modules\\has-tostringtag': 'D:\\POS\\backend\\node_modules\\.has-tostringtag-icVQi5SL',
+552 silly reify   'D:\\POS\\backend\\node_modules\\internal-slot': 'D:\\POS\\backend\\node_modules\\.internal-slot-bzUyOi22',
+552 silly reify   'D:\\POS\\backend\\node_modules\\is-arguments': 'D:\\POS\\backend\\node_modules\\.is-arguments-tkAr5WFN',
+552 silly reify   'D:\\POS\\backend\\node_modules\\is-array-buffer': 'D:\\POS\\backend\\node_modules\\.is-array-buffer-vLE30IoY',
+552 silly reify   'D:\\POS\\backend\\node_modules\\is-bigint': 'D:\\POS\\backend\\node_modules\\.is-bigint-AaPvX7Nb',
+552 silly reify   'D:\\POS\\backend\\node_modules\\is-boolean-object': 'D:\\POS\\backend\\node_modules\\.is-boolean-object-wTdq5YTn',
+552 silly reify   'D:\\POS\\backend\\node_modules\\is-callable': 'D:\\POS\\backend\\node_modules\\.is-callable-Jan6bd2F',
+552 silly reify   'D:\\POS\\backend\\node_modules\\is-date-object': 'D:\\POS\\backend\\node_modules\\.is-date-object-nVy7ckYS',
+552 silly reify   'D:\\POS\\backend\\node_modules\\is-map': 'D:\\POS\\backend\\node_modules\\.is-map-B4ceg7Pw',
+552 silly reify   'D:\\POS\\backend\\node_modules\\is-number-object': 'D:\\POS\\backend\\node_modules\\.is-number-object-sKDRa20G',
+552 silly reify   'D:\\POS\\backend\\node_modules\\is-regex': 'D:\\POS\\backend\\node_modules\\.is-regex-rjrnob2b',
+552 silly reify   'D:\\POS\\backend\\node_modules\\is-set': 'D:\\POS\\backend\\node_modules\\.is-set-CXGt7H5m',
+552 silly reify   'D:\\POS\\backend\\node_modules\\is-shared-array-buffer': 'D:\\POS\\backend\\node_modules\\.is-shared-array-buffer-D5qKWhm3',
+552 silly reify   'D:\\POS\\backend\\node_modules\\is-string': 'D:\\POS\\backend\\node_modules\\.is-string-be3VtSD9',
+552 silly reify   'D:\\POS\\backend\\node_modules\\is-symbol': 'D:\\POS\\backend\\node_modules\\.is-symbol-YI3eI5aO',
+552 silly reify   'D:\\POS\\backend\\node_modules\\is-weakmap': 'D:\\POS\\backend\\node_modules\\.is-weakmap-H8DWg60N',
+552 silly reify   'D:\\POS\\backend\\node_modules\\is-weakset': 'D:\\POS\\backend\\node_modules\\.is-weakset-1jNJnCmn',
+552 silly reify   'D:\\POS\\backend\\node_modules\\isarray': 'D:\\POS\\backend\\node_modules\\.isarray-jgHYsGaj',
+552 silly reify   'D:\\POS\\backend\\node_modules\\json2csv': 'D:\\POS\\backend\\node_modules\\.json2csv-hdC0KiYu',
+552 silly reify   'D:\\POS\\backend\\node_modules\\.bin\\json2csv': 'D:\\POS\\backend\\node_modules\\.bin\\.json2csv-0GMKY2bf',
+552 silly reify   'D:\\POS\\backend\\node_modules\\.bin\\json2csv.cmd': 'D:\\POS\\backend\\node_modules\\.bin\\.json2csv.cmd-Sc4C6Dh1',
+552 silly reify   'D:\\POS\\backend\\node_modules\\.bin\\json2csv.ps1': 'D:\\POS\\backend\\node_modules\\.bin\\.json2csv.ps1-PRMiPgjs',
+552 silly reify   'D:\\POS\\backend\\node_modules\\linebreak': 'D:\\POS\\backend\\node_modules\\.linebreak-qNdoDUPz',
+552 silly reify   'D:\\POS\\backend\\node_modules\\lodash.get': 'D:\\POS\\backend\\node_modules\\.lodash.get-b5lEQgXh',
+552 silly reify   'D:\\POS\\backend\\node_modules\\minimist': 'D:\\POS\\backend\\node_modules\\.minimist-sWbeDpai',
+552 silly reify   'D:\\POS\\backend\\node_modules\\mkdirp': 'D:\\POS\\backend\\node_modules\\.mkdirp-JYu0TRKV',
+552 silly reify   'D:\\POS\\backend\\node_modules\\.bin\\mkdirp': 'D:\\POS\\backend\\node_modules\\.bin\\.mkdirp-0O0QTujt',
+552 silly reify   'D:\\POS\\backend\\node_modules\\.bin\\mkdirp.cmd': 'D:\\POS\\backend\\node_modules\\.bin\\.mkdirp.cmd-NYdIh1op',
+552 silly reify   'D:\\POS\\backend\\node_modules\\.bin\\mkdirp.ps1': 'D:\\POS\\backend\\node_modules\\.bin\\.mkdirp.ps1-74JKOra3',
+552 silly reify   'D:\\POS\\backend\\node_modules\\multer': 'D:\\POS\\backend\\node_modules\\.multer-ap3jhtO5',
+552 silly reify   'D:\\POS\\backend\\node_modules\\object-is': 'D:\\POS\\backend\\node_modules\\.object-is-ghEJQpf5',
+552 silly reify   'D:\\POS\\backend\\node_modules\\object-keys': 'D:\\POS\\backend\\node_modules\\.object-keys-CCYkyWC8',
+552 silly reify   'D:\\POS\\backend\\node_modules\\object.assign': 'D:\\POS\\backend\\node_modules\\.object.assign-5shAvcPh',
+552 silly reify   'D:\\POS\\backend\\node_modules\\png-js': 'D:\\POS\\backend\\node_modules\\.png-js-lQ0YNYVx',
+552 silly reify   'D:\\POS\\backend\\node_modules\\possible-typed-array-names': 'D:\\POS\\backend\\node_modules\\.possible-typed-array-names-3ZsypGGD',
+552 silly reify   'D:\\POS\\backend\\node_modules\\process-nextick-args': 'D:\\POS\\backend\\node_modules\\.process-nextick-args-xCWsw1Vh',
+552 silly reify   'D:\\POS\\backend\\node_modules\\readable-stream': 'D:\\POS\\backend\\node_modules\\.readable-stream-hAz85vON',
+552 silly reify   'D:\\POS\\backend\\node_modules\\regexp.prototype.flags': 'D:\\POS\\backend\\node_modules\\.regexp.prototype.flags-L02oD2jT',
+552 silly reify   'D:\\POS\\backend\\node_modules\\safe-regex-test': 'D:\\POS\\backend\\node_modules\\.safe-regex-test-9zeU6Qke',
+552 silly reify   'D:\\POS\\backend\\node_modules\\set-function-length': 'D:\\POS\\backend\\node_modules\\.set-function-length-KXMFhHpZ',
+552 silly reify   'D:\\POS\\backend\\node_modules\\set-function-name': 'D:\\POS\\backend\\node_modules\\.set-function-name-DokmT8gT',
+552 silly reify   'D:\\POS\\backend\\node_modules\\stop-iteration-iterator': 'D:\\POS\\backend\\node_modules\\.stop-iteration-iterator-SS46xMqk',
+552 silly reify   'D:\\POS\\backend\\node_modules\\streamsearch': 'D:\\POS\\backend\\node_modules\\.streamsearch-X25Szvoy',
+552 silly reify   'D:\\POS\\backend\\node_modules\\string_decoder': 'D:\\POS\\backend\\node_modules\\.string_decoder-V0CQFqkX',
+552 silly reify   'D:\\POS\\backend\\node_modules\\tiny-inflate': 'D:\\POS\\backend\\node_modules\\.tiny-inflate-SrNJWRHT',
+552 silly reify   'D:\\POS\\backend\\node_modules\\tslib': 'D:\\POS\\backend\\node_modules\\.tslib-b3JGzyXq',
+552 silly reify   'D:\\POS\\backend\\node_modules\\typedarray': 'D:\\POS\\backend\\node_modules\\.typedarray-4vusLl7J',
+552 silly reify   'D:\\POS\\backend\\node_modules\\unicode-properties': 'D:\\POS\\backend\\node_modules\\.unicode-properties-VEdQNckf',
+552 silly reify   'D:\\POS\\backend\\node_modules\\unicode-trie': 'D:\\POS\\backend\\node_modules\\.unicode-trie-agKe944x',
+552 silly reify   'D:\\POS\\backend\\node_modules\\util-deprecate': 'D:\\POS\\backend\\node_modules\\.util-deprecate-LJZydtFh',
+552 silly reify   'D:\\POS\\backend\\node_modules\\which-boxed-primitive': 'D:\\POS\\backend\\node_modules\\.which-boxed-primitive-uJ82QaS6',
+552 silly reify   'D:\\POS\\backend\\node_modules\\which-collection': 'D:\\POS\\backend\\node_modules\\.which-collection-xaKFmWjt',
+552 silly reify   'D:\\POS\\backend\\node_modules\\which-typed-array': 'D:\\POS\\backend\\node_modules\\.which-typed-array-0Tapubp4',
+552 silly reify   'D:\\POS\\backend\\node_modules\\xtend': 'D:\\POS\\backend\\node_modules\\.xtend-OjqbP3Ub',
+552 silly reify   'D:\\POS\\backend\\node_modules\\@streamparser\\json': 'D:\\POS\\backend\\node_modules\\@streamparser\\.json-YEQxkWsz',
+552 silly reify   'D:\\POS\\backend\\node_modules\\@swc\\helpers': 'D:\\POS\\backend\\node_modules\\@swc\\.helpers-pVKEbSDt'
+552 silly reify }
+553 silly audit bulk request {
+553 silly audit   '@hapi/hoek': [ '9.3.0' ],
+553 silly audit   '@hapi/topo': [ '5.1.0' ],
+553 silly audit   '@mongodb-js/saslprep': [ '1.4.11' ],
+553 silly audit   '@sideway/address': [ '4.1.5' ],
+553 silly audit   '@sideway/formula': [ '3.0.1' ],
+553 silly audit   '@sideway/pinpoint': [ '2.0.0' ],
+553 silly audit   '@socket.io/component-emitter': [ '3.1.2' ],
+553 silly audit   '@types/cors': [ '2.8.19' ],
+553 silly audit   '@types/node': [ '25.7.0' ],
+553 silly audit   '@types/webidl-conversions': [ '7.0.3' ],
+553 silly audit   '@types/whatwg-url': [ '11.0.5' ],
+553 silly audit   '@types/ws': [ '8.18.1' ],
+553 silly audit   accepts: [ '1.3.8' ],
+553 silly audit   anymatch: [ '3.1.3' ],
+553 silly audit   'array-flatten': [ '1.1.1' ],
+553 silly audit   'balanced-match': [ '4.0.4' ],
+553 silly audit   base64id: [ '2.0.0' ],
+553 silly audit   bcryptjs: [ '2.4.3' ],
+553 silly audit   'binary-extensions': [ '2.3.0' ],
+553 silly audit   'body-parser': [ '1.20.5' ],
+553 silly audit   'brace-expansion': [ '5.0.6' ],
+553 silly audit   braces: [ '3.0.3' ],
+553 silly audit   bson: [ '6.10.4' ],
+553 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+553 silly audit   bytes: [ '3.1.2' ],
+553 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+553 silly audit   'call-bound': [ '1.0.4' ],
+553 silly audit   chokidar: [ '3.6.0' ],
+553 silly audit   'content-disposition': [ '0.5.4' ],
+553 silly audit   'content-type': [ '1.0.5' ],
+553 silly audit   cookie: [ '0.7.2' ],
+553 silly audit   'cookie-signature': [ '1.0.7' ],
+553 silly audit   cors: [ '2.8.6' ],
+553 silly audit   debug: [ '2.6.9', '4.4.3' ],
+553 silly audit   depd: [ '2.0.0' ],
+553 silly audit   destroy: [ '1.2.0' ],
+553 silly audit   dotenv: [ '16.6.1' ],
+553 silly audit   'dunder-proto': [ '1.0.1' ],
+553 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+553 silly audit   'ee-first': [ '1.1.1' ],
+553 silly audit   encodeurl: [ '2.0.0' ],
+553 silly audit   'engine.io': [ '6.6.7' ],
+553 silly audit   'engine.io-parser': [ '5.2.3' ],
+553 silly audit   ms: [ '2.1.3', '2.0.0' ],
+553 silly audit   'es-define-property': [ '1.0.1' ],
+553 silly audit   'es-errors': [ '1.3.0' ],
+553 silly audit   'es-object-atoms': [ '1.1.1' ],
+553 silly audit   'escape-html': [ '1.0.3' ],
+553 silly audit   etag: [ '1.8.1' ],
+553 silly audit   express: [ '4.22.2' ],
+553 silly audit   'fill-range': [ '7.1.1' ],
+553 silly audit   finalhandler: [ '1.3.2' ],
+553 silly audit   forwarded: [ '0.2.0' ],
+553 silly audit   fresh: [ '0.5.2' ],
+553 silly audit   fsevents: [ '2.3.3' ],
+553 silly audit   'function-bind': [ '1.1.2' ],
+553 silly audit   'get-intrinsic': [ '1.3.0' ],
+553 silly audit   'get-proto': [ '1.0.1' ],
+553 silly audit   'glob-parent': [ '5.1.2' ],
+553 silly audit   gopd: [ '1.2.0' ],
+553 silly audit   'has-flag': [ '3.0.0' ],
+553 silly audit   'has-symbols': [ '1.1.0' ],
+553 silly audit   hasown: [ '2.0.3' ],
+553 silly audit   'http-errors': [ '2.0.1' ],
+553 silly audit   'iconv-lite': [ '0.4.24' ],
+553 silly audit   'ignore-by-default': [ '1.0.1' ],
+553 silly audit   inherits: [ '2.0.4' ],
+553 silly audit   'ipaddr.js': [ '1.9.1' ],
+553 silly audit   'is-binary-path': [ '2.1.0' ],
+553 silly audit   'is-extglob': [ '2.1.1' ],
+553 silly audit   'is-glob': [ '4.0.3' ],
+553 silly audit   'is-number': [ '7.0.0' ],
+553 silly audit   joi: [ '17.13.3' ],
+553 silly audit   jsonwebtoken: [ '9.0.3' ],
+553 silly audit   jwa: [ '2.0.1' ],
+553 silly audit   jws: [ '4.0.1' ],
+553 silly audit   kareem: [ '2.6.3' ],
+553 silly audit   'lodash.includes': [ '4.3.0' ],
+553 silly audit   'lodash.isboolean': [ '3.0.3' ],
+553 silly audit   'lodash.isinteger': [ '4.0.4' ],
+553 silly audit   'lodash.isnumber': [ '3.0.3' ],
+553 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+553 silly audit   'lodash.isstring': [ '4.0.1' ],
+553 silly audit   'lodash.once': [ '4.1.1' ],
+553 silly audit   'math-intrinsics': [ '1.1.0' ],
+553 silly audit   'media-typer': [ '0.3.0' ],
+553 silly audit   'memory-pager': [ '1.5.0' ],
+553 silly audit   'merge-descriptors': [ '1.0.3' ],
+553 silly audit   methods: [ '1.1.2' ],
+553 silly audit   mime: [ '1.6.0' ],
+553 silly audit   'mime-db': [ '1.52.0' ],
+553 silly audit   'mime-types': [ '2.1.35' ],
+553 silly audit   minimatch: [ '10.2.5' ],
+553 silly audit   mongodb: [ '6.20.0' ],
+553 silly audit   'mongodb-connection-string-url': [ '3.0.2' ],
+553 silly audit   mongoose: [ '8.23.1' ],
+553 silly audit   mpath: [ '0.9.0' ],
+553 silly audit   mquery: [ '5.0.0' ],
+553 silly audit   negotiator: [ '0.6.3' ],
+553 silly audit   nodemon: [ '3.1.14' ],
+553 silly audit   'normalize-path': [ '3.0.0' ],
+553 silly audit   'object-assign': [ '4.1.1' ],
+553 silly audit   'object-inspect': [ '1.13.4' ],
+553 silly audit   'on-finished': [ '2.4.1' ],
+553 silly audit   parseurl: [ '1.3.3' ],
+553 silly audit   'path-to-regexp': [ '0.1.13' ],
+553 silly audit   picomatch: [ '2.3.2' ],
+553 silly audit   'proxy-addr': [ '2.0.7' ],
+553 silly audit   'pstree.remy': [ '1.1.8' ],
+553 silly audit   punycode: [ '2.3.1' ],
+553 silly audit   qs: [ '6.15.1' ],
+553 silly audit   'range-parser': [ '1.2.1' ],
+553 silly audit   'raw-body': [ '2.5.3' ],
+553 silly audit   readdirp: [ '3.6.0' ],
+553 silly audit   'safe-buffer': [ '5.2.1', '5.1.2' ],
+553 silly audit   'safer-buffer': [ '2.1.2' ],
+553 silly audit   semver: [ '7.8.0' ],
+553 silly audit   send: [ '0.19.2' ],
+553 silly audit   'serve-static': [ '1.16.3' ],
+553 silly audit   setprototypeof: [ '1.2.0' ],
+553 silly audit   'side-channel': [ '1.1.0' ],
+553 silly audit   'side-channel-list': [ '1.0.1' ],
+553 silly audit   'side-channel-map': [ '1.0.1' ],
+553 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+553 silly audit   sift: [ '17.1.3' ],
+553 silly audit   'simple-update-notifier': [ '2.0.0' ],
+553 silly audit   'socket.io': [ '4.8.3' ],
+553 silly audit   'socket.io-adapter': [ '2.5.6' ],
+553 silly audit   'socket.io-parser': [ '4.2.6' ],
+553 silly audit   'sparse-bitfield': [ '3.0.3' ],
+553 silly audit   statuses: [ '2.0.2' ],
+553 silly audit   'supports-color': [ '5.5.0' ],
+553 silly audit   'to-regex-range': [ '5.0.1' ],
+553 silly audit   toidentifier: [ '1.0.1' ],
+553 silly audit   touch: [ '3.1.1' ],
+553 silly audit   tr46: [ '5.1.1' ],
+553 silly audit   'type-is': [ '1.6.18' ],
+553 silly audit   undefsafe: [ '2.0.5' ],
+553 silly audit   'undici-types': [ '7.21.0' ],
+553 silly audit   unpipe: [ '1.0.0' ],
+553 silly audit   'utils-merge': [ '1.0.1' ],
+553 silly audit   vary: [ '1.1.2' ],
+553 silly audit   'webidl-conversions': [ '7.0.0' ],
+553 silly audit   'whatwg-url': [ '14.2.0' ],
+553 silly audit   ws: [ '8.18.3' ],
+553 silly audit   json2csv: [ '6.0.0-alpha.2' ],
+553 silly audit   multer: [ '1.4.5-lts.2' ],
+553 silly audit   pdfkit: [ '0.15.2' ],
+553 silly audit   '@streamparser/json': [ '0.0.6' ],
+553 silly audit   commander: [ '6.2.1' ],
+553 silly audit   'lodash.get': [ '4.4.2' ],
+553 silly audit   'append-field': [ '1.0.0' ],
+553 silly audit   busboy: [ '1.6.0' ],
+553 silly audit   'concat-stream': [ '1.6.2' ],
+553 silly audit   mkdirp: [ '0.5.6' ],
+553 silly audit   xtend: [ '4.0.2' ],
+553 silly audit   streamsearch: [ '1.1.0' ],
+553 silly audit   'buffer-from': [ '1.1.2' ],
+553 silly audit   'readable-stream': [ '2.3.8' ],
+553 silly audit   typedarray: [ '0.0.6' ],
+553 silly audit   minimist: [ '1.2.8' ],
+553 silly audit   'crypto-js': [ '4.2.0' ],
+553 silly audit   fontkit: [ '1.9.0' ],
+553 silly audit   'jpeg-exif': [ '1.1.4' ],
+553 silly audit   linebreak: [ '1.1.0' ],
+553 silly audit   'png-js': [ '1.1.0' ],
+553 silly audit   '@swc/helpers': [ '0.3.17' ],
+553 silly audit   brotli: [ '1.3.3' ],
+553 silly audit   clone: [ '2.1.2' ],
+553 silly audit   'deep-equal': [ '2.2.3' ],
+553 silly audit   dfa: [ '1.2.0' ],
+553 silly audit   restructure: [ '2.0.1' ],
+553 silly audit   'tiny-inflate': [ '1.0.3' ],
+553 silly audit   'unicode-properties': [ '1.4.1' ],
+553 silly audit   'unicode-trie': [ '2.0.0' ],
+553 silly audit   tslib: [ '2.8.1' ],
+553 silly audit   'base64-js': [ '1.5.1', '0.0.8' ],
+553 silly audit   'array-buffer-byte-length': [ '1.0.2' ],
+553 silly audit   'call-bind': [ '1.0.9' ],
+553 silly audit   'es-get-iterator': [ '1.1.3' ],
+553 silly audit   'is-arguments': [ '1.2.0' ],
+553 silly audit   'is-array-buffer': [ '3.0.5' ],
+553 silly audit   'is-date-object': [ '1.1.0' ],
+553 silly audit   'is-regex': [ '1.2.1' ],
+553 silly audit   'is-shared-array-buffer': [ '1.0.4' ],
+553 silly audit   isarray: [ '2.0.5', '1.0.0' ],
+553 silly audit   'object-is': [ '1.1.6' ],
+553 silly audit   'object-keys': [ '1.1.1' ],
+553 silly audit   'object.assign': [ '4.1.7' ],
+553 silly audit   'regexp.prototype.flags': [ '1.5.4' ],
+553 silly audit   'which-boxed-primitive': [ '1.1.1' ],
+553 silly audit   'which-collection': [ '1.0.2' ],
+553 silly audit   'which-typed-array': [ '1.1.20' ],
+553 silly audit   'set-function-length': [ '1.2.2' ],
+553 silly audit   'is-map': [ '2.0.3' ],
+553 silly audit   'is-set': [ '2.0.3' ],
+553 silly audit   'is-string': [ '1.1.1' ],
+553 silly audit   'stop-iteration-iterator': [ '1.1.0' ],
+553 silly audit   'has-tostringtag': [ '1.0.2' ],
+553 silly audit   'define-properties': [ '1.2.1' ],
+553 silly audit   'define-data-property': [ '1.1.4' ],
+553 silly audit   'has-property-descriptors': [ '1.0.2' ],
+553 silly audit   'browserify-zlib': [ '0.2.0' ],
+553 silly audit   pako: [ '1.0.11', '0.2.9' ],
+553 silly audit   'core-util-is': [ '1.0.3' ],
+553 silly audit   'process-nextick-args': [ '2.0.1' ],
+553 silly audit   string_decoder: [ '1.1.1' ],
+553 silly audit   'util-deprecate': [ '1.0.2' ],
+553 silly audit   'set-function-name': [ '2.0.2' ],
+553 silly audit   'functions-have-names': [ '1.2.3' ],
+553 silly audit   'internal-slot': [ '1.1.0' ],
+553 silly audit   'is-bigint': [ '1.1.0' ],
+553 silly audit   'is-boolean-object': [ '1.2.2' ],
+553 silly audit   'is-number-object': [ '1.1.1' ],
+553 silly audit   'is-symbol': [ '1.1.1' ],
+553 silly audit   'has-bigints': [ '1.1.0' ],
+553 silly audit   'safe-regex-test': [ '1.1.0' ],
+553 silly audit   'is-weakmap': [ '2.0.2' ],
+553 silly audit   'is-weakset': [ '2.0.4' ],
+553 silly audit   'available-typed-arrays': [ '1.0.7' ],
+553 silly audit   'for-each': [ '0.3.5' ],
+553 silly audit   'possible-typed-array-names': [ '1.1.0' ],
+553 silly audit   'is-callable': [ '1.2.7' ]
+553 silly audit }
+554 verbose reify failed optional dependency D:\POS\backend\node_modules\fsevents
+555 silly reify mark deleted [ 'D:\\POS\\backend\\node_modules\\fsevents' ]
+556 silly tarball no local data for @swc/helpers@https://registry.npmjs.org/@swc/helpers/-/helpers-0.3.17.tgz. Extracting by manifest.
+557 silly tarball no local data for @streamparser/json@https://registry.npmjs.org/@streamparser/json/-/json-0.0.6.tgz. Extracting by manifest.
+558 silly tarball no local data for xtend@https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz. Extracting by manifest.
+559 silly tarball no local data for which-typed-array@https://registry.npmjs.org/which-typed-array/-/which-typed-array-1.1.20.tgz. Extracting by manifest.
+560 silly tarball no local data for which-collection@https://registry.npmjs.org/which-collection/-/which-collection-1.0.2.tgz. Extracting by manifest.
+561 silly tarball no local data for which-boxed-primitive@https://registry.npmjs.org/which-boxed-primitive/-/which-boxed-primitive-1.1.1.tgz. Extracting by manifest.
+562 silly tarball no local data for util-deprecate@https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz. Extracting by manifest.
+563 silly tarball no local data for unicode-trie@https://registry.npmjs.org/unicode-trie/-/unicode-trie-2.0.0.tgz. Extracting by manifest.
+564 silly tarball no local data for unicode-properties@https://registry.npmjs.org/unicode-properties/-/unicode-properties-1.4.1.tgz. Extracting by manifest.
+565 silly tarball no local data for typedarray@https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz. Extracting by manifest.
+566 silly tarball no local data for tslib@https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz. Extracting by manifest.
+567 silly tarball no local data for tiny-inflate@https://registry.npmjs.org/tiny-inflate/-/tiny-inflate-1.0.3.tgz. Extracting by manifest.
+568 silly tarball no local data for string_decoder@https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz. Extracting by manifest.
+569 silly tarball no local data for streamsearch@https://registry.npmjs.org/streamsearch/-/streamsearch-1.1.0.tgz. Extracting by manifest.
+570 silly tarball no local data for stop-iteration-iterator@https://registry.npmjs.org/stop-iteration-iterator/-/stop-iteration-iterator-1.1.0.tgz. Extracting by manifest.
+571 silly tarball no local data for set-function-name@https://registry.npmjs.org/set-function-name/-/set-function-name-2.0.2.tgz. Extracting by manifest.
+572 silly tarball no local data for set-function-length@https://registry.npmjs.org/set-function-length/-/set-function-length-1.2.2.tgz. Extracting by manifest.
+573 silly tarball no local data for safe-regex-test@https://registry.npmjs.org/safe-regex-test/-/safe-regex-test-1.1.0.tgz. Extracting by manifest.
+574 silly tarball no local data for regexp.prototype.flags@https://registry.npmjs.org/regexp.prototype.flags/-/regexp.prototype.flags-1.5.4.tgz. Extracting by manifest.
+575 silly tarball no local data for readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz. Extracting by manifest.
+576 silly tarball no local data for process-nextick-args@https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz. Extracting by manifest.
+577 silly tarball no local data for possible-typed-array-names@https://registry.npmjs.org/possible-typed-array-names/-/possible-typed-array-names-1.1.0.tgz. Extracting by manifest.
+578 silly tarball no local data for png-js@https://registry.npmjs.org/png-js/-/png-js-1.1.0.tgz. Extracting by manifest.
+579 silly tarball no local data for object.assign@https://registry.npmjs.org/object.assign/-/object.assign-4.1.7.tgz. Extracting by manifest.
+580 silly tarball no local data for object-keys@https://registry.npmjs.org/object-keys/-/object-keys-1.1.1.tgz. Extracting by manifest.
+581 silly tarball no local data for object-is@https://registry.npmjs.org/object-is/-/object-is-1.1.6.tgz. Extracting by manifest.
+582 silly tarball no local data for multer@https://registry.npmjs.org/multer/-/multer-1.4.5-lts.2.tgz. Extracting by manifest.
+583 silly tarball no local data for mkdirp@https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.6.tgz. Extracting by manifest.
+584 silly tarball no local data for minimist@https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz. Extracting by manifest.
+585 silly tarball no local data for lodash.get@https://registry.npmjs.org/lodash.get/-/lodash.get-4.4.2.tgz. Extracting by manifest.
+586 silly tarball no local data for linebreak@https://registry.npmjs.org/linebreak/-/linebreak-1.1.0.tgz. Extracting by manifest.
+587 silly tarball no local data for json2csv@https://registry.npmjs.org/json2csv/-/json2csv-6.0.0-alpha.2.tgz. Extracting by manifest.
+588 silly tarball no local data for is-weakset@https://registry.npmjs.org/is-weakset/-/is-weakset-2.0.4.tgz. Extracting by manifest.
+589 silly tarball no local data for isarray@https://registry.npmjs.org/isarray/-/isarray-2.0.5.tgz. Extracting by manifest.
+590 silly tarball no local data for is-weakmap@https://registry.npmjs.org/is-weakmap/-/is-weakmap-2.0.2.tgz. Extracting by manifest.
+591 silly tarball no local data for is-string@https://registry.npmjs.org/is-string/-/is-string-1.1.1.tgz. Extracting by manifest.
+592 silly tarball no local data for is-shared-array-buffer@https://registry.npmjs.org/is-shared-array-buffer/-/is-shared-array-buffer-1.0.4.tgz. Extracting by manifest.
+593 silly tarball no local data for is-set@https://registry.npmjs.org/is-set/-/is-set-2.0.3.tgz. Extracting by manifest.
+594 silly tarball no local data for is-regex@https://registry.npmjs.org/is-regex/-/is-regex-1.2.1.tgz. Extracting by manifest.
+595 silly tarball no local data for is-number-object@https://registry.npmjs.org/is-number-object/-/is-number-object-1.1.1.tgz. Extracting by manifest.
+596 silly tarball no local data for is-map@https://registry.npmjs.org/is-map/-/is-map-2.0.3.tgz. Extracting by manifest.
+597 silly tarball no local data for is-date-object@https://registry.npmjs.org/is-date-object/-/is-date-object-1.1.0.tgz. Extracting by manifest.
+598 silly tarball no local data for is-callable@https://registry.npmjs.org/is-callable/-/is-callable-1.2.7.tgz. Extracting by manifest.
+599 silly tarball no local data for is-boolean-object@https://registry.npmjs.org/is-boolean-object/-/is-boolean-object-1.2.2.tgz. Extracting by manifest.
+600 silly tarball no local data for is-array-buffer@https://registry.npmjs.org/is-array-buffer/-/is-array-buffer-3.0.5.tgz. Extracting by manifest.
+601 silly tarball no local data for is-bigint@https://registry.npmjs.org/is-bigint/-/is-bigint-1.1.0.tgz. Extracting by manifest.
+602 silly tarball no local data for internal-slot@https://registry.npmjs.org/internal-slot/-/internal-slot-1.1.0.tgz. Extracting by manifest.
+603 silly tarball no local data for is-arguments@https://registry.npmjs.org/is-arguments/-/is-arguments-1.2.0.tgz. Extracting by manifest.
+604 silly tarball no local data for has-property-descriptors@https://registry.npmjs.org/has-property-descriptors/-/has-property-descriptors-1.0.2.tgz. Extracting by manifest.
+605 silly tarball no local data for has-tostringtag@https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz. Extracting by manifest.
+606 silly tarball no local data for functions-have-names@https://registry.npmjs.org/functions-have-names/-/functions-have-names-1.2.3.tgz. Extracting by manifest.
+607 silly tarball no local data for has-bigints@https://registry.npmjs.org/has-bigints/-/has-bigints-1.1.0.tgz. Extracting by manifest.
+608 silly tarball no local data for for-each@https://registry.npmjs.org/for-each/-/for-each-0.3.5.tgz. Extracting by manifest.
+609 silly tarball no local data for dfa@https://registry.npmjs.org/dfa/-/dfa-1.2.0.tgz. Extracting by manifest.
+610 silly tarball no local data for define-properties@https://registry.npmjs.org/define-properties/-/define-properties-1.2.1.tgz. Extracting by manifest.
+611 silly tarball no local data for define-data-property@https://registry.npmjs.org/define-data-property/-/define-data-property-1.1.4.tgz. Extracting by manifest.
+612 silly tarball no local data for deep-equal@https://registry.npmjs.org/deep-equal/-/deep-equal-2.2.3.tgz. Extracting by manifest.
+613 silly tarball no local data for core-util-is@https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz. Extracting by manifest.
+614 silly tarball no local data for concat-stream@https://registry.npmjs.org/concat-stream/-/concat-stream-1.6.2.tgz. Extracting by manifest.
+615 silly tarball no local data for es-get-iterator@https://registry.npmjs.org/es-get-iterator/-/es-get-iterator-1.1.3.tgz. Extracting by manifest.
+616 silly tarball no local data for commander@https://registry.npmjs.org/commander/-/commander-6.2.1.tgz. Extracting by manifest.
+617 silly tarball no local data for call-bind@https://registry.npmjs.org/call-bind/-/call-bind-1.0.9.tgz. Extracting by manifest.
+618 silly tarball no local data for clone@https://registry.npmjs.org/clone/-/clone-2.1.2.tgz. Extracting by manifest.
+619 silly tarball no local data for busboy@https://registry.npmjs.org/busboy/-/busboy-1.6.0.tgz. Extracting by manifest.
+620 silly tarball no local data for buffer-from@https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz. Extracting by manifest.
+621 silly tarball no local data for browserify-zlib@https://registry.npmjs.org/browserify-zlib/-/browserify-zlib-0.2.0.tgz. Extracting by manifest.
+622 silly tarball no local data for base64-js@https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz. Extracting by manifest.
+623 silly tarball no local data for available-typed-arrays@https://registry.npmjs.org/available-typed-arrays/-/available-typed-arrays-1.0.7.tgz. Extracting by manifest.
+624 silly tarball no local data for append-field@https://registry.npmjs.org/append-field/-/append-field-1.0.0.tgz. Extracting by manifest.
+625 silly tarball no local data for array-buffer-byte-length@https://registry.npmjs.org/array-buffer-byte-length/-/array-buffer-byte-length-1.0.2.tgz. Extracting by manifest.
+626 silly tarball no local data for restructure@https://registry.npmjs.org/restructure/-/restructure-2.0.1.tgz. Extracting by manifest.
+627 silly tarball no local data for pdfkit@https://registry.npmjs.org/pdfkit/-/pdfkit-0.15.2.tgz. Extracting by manifest.
+628 silly tarball no local data for pako@https://registry.npmjs.org/pako/-/pako-1.0.11.tgz. Extracting by manifest.
+629 silly tarball no local data for jpeg-exif@https://registry.npmjs.org/jpeg-exif/-/jpeg-exif-1.1.4.tgz. Extracting by manifest.
+630 silly tarball no local data for fontkit@https://registry.npmjs.org/fontkit/-/fontkit-1.9.0.tgz. Extracting by manifest.
+631 silly tarball no local data for crypto-js@https://registry.npmjs.org/crypto-js/-/crypto-js-4.2.0.tgz. Extracting by manifest.
+632 silly tarball no local data for brotli@https://registry.npmjs.org/brotli/-/brotli-1.3.3.tgz. Extracting by manifest.
+633 silly tarball no local data for safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz. Extracting by manifest.
+634 silly tarball no local data for pako@https://registry.npmjs.org/pako/-/pako-0.2.9.tgz. Extracting by manifest.
+635 silly tarball no local data for safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz. Extracting by manifest.
+636 silly tarball no local data for isarray@https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz. Extracting by manifest.
+637 silly tarball no local data for base64-js@https://registry.npmjs.org/base64-js/-/base64-js-0.0.8.tgz. Extracting by manifest.
+638 silly tarball no local data for is-symbol@https://registry.npmjs.org/is-symbol/-/is-symbol-1.1.1.tgz. Extracting by manifest.
+639 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 851ms
+640 silly audit report {}
+641 http fetch GET 200 https://registry.npmjs.org/set-function-length/-/set-function-length-1.2.2.tgz 2092ms (cache miss)
+642 http fetch GET 200 https://registry.npmjs.org/stop-iteration-iterator/-/stop-iteration-iterator-1.1.0.tgz 2098ms (cache miss)
+643 http fetch GET 200 https://registry.npmjs.org/safe-regex-test/-/safe-regex-test-1.1.0.tgz 2126ms (cache miss)
+644 http fetch GET 200 https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz 2162ms (cache miss)
+645 http fetch GET 200 https://registry.npmjs.org/lodash.get/-/lodash.get-4.4.2.tgz 2182ms (cache miss)
+646 warn deprecated lodash.get@4.4.2: This package is deprecated. Use the optional chaining (?.) operator instead.
+647 http fetch GET 200 https://registry.npmjs.org/isarray/-/isarray-2.0.5.tgz 2203ms (cache miss)
+648 http fetch GET 200 https://registry.npmjs.org/is-shared-array-buffer/-/is-shared-array-buffer-1.0.4.tgz 2227ms (cache miss)
+649 http fetch GET 200 https://registry.npmjs.org/array-buffer-byte-length/-/array-buffer-byte-length-1.0.2.tgz 2043ms (cache miss)
+650 http fetch GET 200 https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz 2326ms (cache miss)
+651 http fetch GET 200 https://registry.npmjs.org/concat-stream/-/concat-stream-1.6.2.tgz 2106ms (cache miss)
+652 http fetch GET 200 https://registry.npmjs.org/define-properties/-/define-properties-1.2.1.tgz 2159ms (cache miss)
+653 http fetch GET 200 https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 2352ms (cache miss)
+654 http fetch GET 200 https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz 2135ms (cache miss)
+655 http fetch GET 200 https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz 2083ms (cache miss)
+656 http fetch GET 200 https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.6.tgz 2378ms (cache miss)
+657 http fetch GET 200 https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz 2178ms (cache miss)
+658 http fetch GET 200 https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz 2474ms (cache miss)
+659 http fetch GET 200 https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz 2277ms (cache miss)
+660 http fetch GET 200 https://registry.npmjs.org/clone/-/clone-2.1.2.tgz 2384ms (cache miss)
+661 http fetch GET 200 https://registry.npmjs.org/set-function-name/-/set-function-name-2.0.2.tgz 2625ms (cache miss)
+662 http fetch GET 200 https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz 2778ms (cache miss)
+663 http fetch GET 200 https://registry.npmjs.org/streamsearch/-/streamsearch-1.1.0.tgz 2809ms (cache miss)
+664 http fetch GET 200 https://registry.npmjs.org/append-field/-/append-field-1.0.0.tgz 2551ms (cache miss)
+665 http fetch GET 200 https://registry.npmjs.org/possible-typed-array-names/-/possible-typed-array-names-1.1.0.tgz 2867ms (cache miss)
+666 http fetch GET 200 https://registry.npmjs.org/base64-js/-/base64-js-0.0.8.tgz 2562ms (cache miss)
+667 http fetch GET 200 https://registry.npmjs.org/has-property-descriptors/-/has-property-descriptors-1.0.2.tgz 2823ms (cache miss)
+668 http fetch GET 200 https://registry.npmjs.org/is-callable/-/is-callable-1.2.7.tgz 2945ms (cache miss)
+669 http fetch GET 200 https://registry.npmjs.org/commander/-/commander-6.2.1.tgz 2920ms (cache miss)
+670 http fetch GET 200 https://registry.npmjs.org/tiny-inflate/-/tiny-inflate-1.0.3.tgz 3184ms (cache miss)
+671 http fetch GET 200 https://registry.npmjs.org/unicode-trie/-/unicode-trie-2.0.0.tgz 3195ms (cache miss)
+672 http fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz 2864ms (cache miss)
+673 http fetch GET 200 https://registry.npmjs.org/png-js/-/png-js-1.1.0.tgz 3204ms (cache miss)
+674 http fetch GET 200 https://registry.npmjs.org/dfa/-/dfa-1.2.0.tgz 3065ms (cache miss)
+675 http fetch GET 200 https://registry.npmjs.org/which-collection/-/which-collection-1.0.2.tgz 3259ms (cache miss)
+676 http fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz 3007ms (cache miss)
+677 http fetch GET 200 https://registry.npmjs.org/object-keys/-/object-keys-1.1.1.tgz 3303ms (cache miss)
+678 http fetch GET 200 https://registry.npmjs.org/has-bigints/-/has-bigints-1.1.0.tgz 3187ms (cache miss)
+679 http fetch GET 200 https://registry.npmjs.org/which-boxed-primitive/-/which-boxed-primitive-1.1.1.tgz 3368ms (cache miss)
+680 http fetch GET 200 https://registry.npmjs.org/is-number-object/-/is-number-object-1.1.1.tgz 3353ms (cache miss)
+681 http fetch GET 200 https://registry.npmjs.org/is-string/-/is-string-1.1.1.tgz 3506ms (cache miss)
+682 http fetch GET 200 https://registry.npmjs.org/is-array-buffer/-/is-array-buffer-3.0.5.tgz 3471ms (cache miss)
+683 http fetch GET 200 https://registry.npmjs.org/functions-have-names/-/functions-have-names-1.2.3.tgz 3433ms (cache miss)
+684 http fetch GET 200 https://registry.npmjs.org/available-typed-arrays/-/available-typed-arrays-1.0.7.tgz 3368ms (cache miss)
+685 http fetch GET 200 https://registry.npmjs.org/is-bigint/-/is-bigint-1.1.0.tgz 3563ms (cache miss)
+686 http fetch GET 200 https://registry.npmjs.org/define-data-property/-/define-data-property-1.1.4.tgz 3508ms (cache miss)
+687 http fetch GET 200 https://registry.npmjs.org/is-weakmap/-/is-weakmap-2.0.2.tgz 3726ms (cache miss)
+688 http fetch GET 200 https://registry.npmjs.org/is-date-object/-/is-date-object-1.1.0.tgz 3755ms (cache miss)
+689 http fetch GET 200 https://registry.npmjs.org/is-weakset/-/is-weakset-2.0.4.tgz 3891ms (cache miss)
+690 http fetch GET 200 https://registry.npmjs.org/which-typed-array/-/which-typed-array-1.1.20.tgz 3989ms (cache miss)
+691 http fetch GET 200 https://registry.npmjs.org/is-set/-/is-set-2.0.3.tgz 3928ms (cache miss)
+692 http fetch GET 200 https://registry.npmjs.org/is-map/-/is-map-2.0.3.tgz 3918ms (cache miss)
+693 http fetch GET 200 https://registry.npmjs.org/for-each/-/for-each-0.3.5.tgz 3852ms (cache miss)
+694 http fetch GET 200 https://registry.npmjs.org/is-boolean-object/-/is-boolean-object-1.2.2.tgz 3927ms (cache miss)
+695 http fetch GET 200 https://registry.npmjs.org/internal-slot/-/internal-slot-1.1.0.tgz 3922ms (cache miss)
+696 http fetch GET 200 https://registry.npmjs.org/is-symbol/-/is-symbol-1.1.1.tgz 3795ms (cache miss)
+697 http fetch GET 200 https://registry.npmjs.org/is-arguments/-/is-arguments-1.2.0.tgz 3987ms (cache miss)
+698 http fetch GET 200 https://registry.npmjs.org/browserify-zlib/-/browserify-zlib-0.2.0.tgz 3878ms (cache miss)
+699 http fetch GET 200 https://registry.npmjs.org/unicode-properties/-/unicode-properties-1.4.1.tgz 4144ms (cache miss)
+700 http fetch GET 200 https://registry.npmjs.org/is-regex/-/is-regex-1.2.1.tgz 4072ms (cache miss)
+701 http fetch GET 200 https://registry.npmjs.org/multer/-/multer-1.4.5-lts.2.tgz 4209ms (cache miss)
+702 warn deprecated multer@1.4.5-lts.2: Multer 1.x is impacted by a number of vulnerabilities, which have been patched in 2.x. You should upgrade to the latest 2.x version.
+703 http fetch GET 200 https://registry.npmjs.org/linebreak/-/linebreak-1.1.0.tgz 4204ms (cache miss)
+704 http fetch GET 200 https://registry.npmjs.org/call-bind/-/call-bind-1.0.9.tgz 4012ms (cache miss)
+705 http fetch GET 200 https://registry.npmjs.org/regexp.prototype.flags/-/regexp.prototype.flags-1.5.4.tgz 4264ms (cache miss)
+706 http fetch GET 200 https://registry.npmjs.org/es-get-iterator/-/es-get-iterator-1.1.3.tgz 4055ms (cache miss)
+707 http fetch GET 200 https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz 4205ms (cache miss)
+708 http fetch GET 200 https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz 4462ms (cache miss)
+709 http fetch GET 200 https://registry.npmjs.org/object-is/-/object-is-1.1.6.tgz 4455ms (cache miss)
+710 http fetch GET 200 https://registry.npmjs.org/deep-equal/-/deep-equal-2.2.3.tgz 4350ms (cache miss)
+711 http fetch GET 200 https://registry.npmjs.org/object.assign/-/object.assign-4.1.7.tgz 4550ms (cache miss)
+712 http fetch GET 200 https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz 4644ms (cache miss)
+713 http fetch GET 200 https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz 4651ms (cache miss)
+714 http fetch GET 200 https://registry.npmjs.org/busboy/-/busboy-1.6.0.tgz 4461ms (cache miss)
+715 http fetch GET 200 https://registry.npmjs.org/json2csv/-/json2csv-6.0.0-alpha.2.tgz 4726ms (cache miss)
+716 http fetch GET 200 https://registry.npmjs.org/restructure/-/restructure-2.0.1.tgz 4581ms (cache miss)
+717 http fetch GET 200 https://registry.npmjs.org/jpeg-exif/-/jpeg-exif-1.1.4.tgz 4578ms (cache miss)
+718 warn deprecated jpeg-exif@1.1.4: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+719 http fetch GET 200 https://registry.npmjs.org/pako/-/pako-1.0.11.tgz 4595ms (cache miss)
+720 http fetch GET 200 https://registry.npmjs.org/pako/-/pako-0.2.9.tgz 4590ms (cache miss)
+721 http fetch GET 200 https://registry.npmjs.org/brotli/-/brotli-1.3.3.tgz 4669ms (cache miss)
+722 http fetch GET 200 https://registry.npmjs.org/crypto-js/-/crypto-js-4.2.0.tgz 4789ms (cache miss)
+723 http fetch GET 200 https://registry.npmjs.org/@streamparser/json/-/json-0.0.6.tgz 6482ms (cache miss)
+724 http fetch GET 200 https://registry.npmjs.org/pdfkit/-/pdfkit-0.15.2.tgz 6227ms (cache miss)
+725 http fetch GET 200 https://registry.npmjs.org/@swc/helpers/-/helpers-0.3.17.tgz 6753ms (cache miss)
+726 http fetch GET 200 https://registry.npmjs.org/fontkit/-/fontkit-1.9.0.tgz 6466ms (cache miss)
+727 silly CHANGE node_modules/@swc/helpers
+728 silly CHANGE node_modules/@streamparser/json
+729 silly CHANGE node_modules/xtend
+730 silly CHANGE node_modules/which-typed-array
+731 silly CHANGE node_modules/which-collection
+732 silly CHANGE node_modules/which-boxed-primitive
+733 silly CHANGE node_modules/util-deprecate
+734 silly CHANGE node_modules/unicode-trie
+735 silly CHANGE node_modules/unicode-trie/node_modules/pako
+736 silly CHANGE node_modules/unicode-properties
+737 silly CHANGE node_modules/typedarray
+738 silly CHANGE node_modules/tslib
+739 silly CHANGE node_modules/tiny-inflate
+740 silly CHANGE node_modules/string_decoder
+741 silly CHANGE node_modules/string_decoder/node_modules/safe-buffer
+742 silly CHANGE node_modules/streamsearch
+743 silly CHANGE node_modules/stop-iteration-iterator
+744 silly CHANGE node_modules/set-function-name
+745 silly CHANGE node_modules/set-function-length
+746 silly CHANGE node_modules/safe-regex-test
+747 silly CHANGE node_modules/regexp.prototype.flags
+748 silly CHANGE node_modules/readable-stream
+749 silly CHANGE node_modules/readable-stream/node_modules/safe-buffer
+750 silly CHANGE node_modules/readable-stream/node_modules/isarray
+751 silly CHANGE node_modules/process-nextick-args
+752 silly CHANGE node_modules/possible-typed-array-names
+753 silly CHANGE node_modules/png-js
+754 silly CHANGE node_modules/object.assign
+755 silly CHANGE node_modules/object-keys
+756 silly CHANGE node_modules/object-is
+757 silly CHANGE node_modules/multer
+758 silly CHANGE node_modules/mkdirp
+759 silly CHANGE node_modules/minimist
+760 silly CHANGE node_modules/lodash.get
+761 silly CHANGE node_modules/linebreak
+762 silly CHANGE node_modules/linebreak/node_modules/base64-js
+763 silly CHANGE node_modules/json2csv
+764 silly CHANGE node_modules/isarray
+765 silly CHANGE node_modules/is-weakset
+766 silly CHANGE node_modules/is-weakmap
+767 silly CHANGE node_modules/is-symbol
+768 silly CHANGE node_modules/is-string
+769 silly CHANGE node_modules/is-shared-array-buffer
+770 silly CHANGE node_modules/is-set
+771 silly CHANGE node_modules/is-regex
+772 silly CHANGE node_modules/is-number-object
+773 silly CHANGE node_modules/is-map
+774 silly CHANGE node_modules/is-date-object
+775 silly CHANGE node_modules/is-callable
+776 silly CHANGE node_modules/is-boolean-object
+777 silly CHANGE node_modules/is-bigint
+778 silly CHANGE node_modules/is-array-buffer
+779 silly CHANGE node_modules/is-arguments
+780 silly CHANGE node_modules/internal-slot
+781 silly CHANGE node_modules/has-tostringtag
+782 silly CHANGE node_modules/has-property-descriptors
+783 silly CHANGE node_modules/has-bigints
+784 silly CHANGE node_modules/functions-have-names
+785 silly CHANGE node_modules/for-each
+786 silly CHANGE node_modules/es-get-iterator
+787 silly CHANGE node_modules/dfa
+788 silly CHANGE node_modules/define-properties
+789 silly CHANGE node_modules/define-data-property
+790 silly CHANGE node_modules/deep-equal
+791 silly CHANGE node_modules/core-util-is
+792 silly CHANGE node_modules/concat-stream
+793 silly CHANGE node_modules/commander
+794 silly CHANGE node_modules/clone
+795 silly CHANGE node_modules/call-bind
+796 silly CHANGE node_modules/busboy
+797 silly CHANGE node_modules/buffer-from
+798 silly CHANGE node_modules/browserify-zlib
+799 silly CHANGE node_modules/base64-js
+800 silly CHANGE node_modules/available-typed-arrays
+801 silly CHANGE node_modules/array-buffer-byte-length
+802 silly CHANGE node_modules/append-field
+803 silly CHANGE node_modules/restructure
+804 silly CHANGE node_modules/pdfkit
+805 silly CHANGE node_modules/pako
+806 silly CHANGE node_modules/jpeg-exif
+807 silly CHANGE node_modules/fsevents
+808 silly CHANGE node_modules/fontkit
+809 silly CHANGE node_modules/crypto-js
+810 silly CHANGE node_modules/brotli
+811 verbose cwd D:\POS\backend
+812 verbose os Windows_NT 10.0.19045
+813 verbose node v20.19.2
+814 verbose npm  v10.8.2
+815 notice
+815 notice New major version of npm available! 10.8.2 -> 11.14.1
+815 notice Changelog: https://github.com/npm/cli/releases/tag/v11.14.1
+815 notice To update run: npm install -g npm@11.14.1
+815 notice  { force: true, [Symbol(proc-log.meta)]: true }
+816 verbose exit 0
+817 info ok
