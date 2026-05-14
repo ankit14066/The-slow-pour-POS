@@ -45,7 +45,7 @@ const NotificationBell = () => {
   return (
     <div className="relative">
       <button className="relative text-cream-200" onClick={() => setOpen((v) => !v)}>
-        <span className="text-lg">??</span>
+        <span className="text-lg">🔔</span>
         {unread > 0 && <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] rounded-full h-5 w-5 flex items-center justify-center">{unread}</span>}
       </button>
 
